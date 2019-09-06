@@ -10,12 +10,16 @@ target 'RXSample' do
   pod 'RxCocoa'
   #  https://github.com/SnapKit/SnapKit
   pod 'SnapKit'
-  #  https://github.com/Moya/Moya
-  pod 'Moya/RxSwift'
+#  #  https://github.com/Moya/Moya
+#  pod 'Moya/RxSwift'
+  pod 'Moya'
+  pod 'Alamofire'
 
   #  https://github.com/CoderMJLee/MJRefresh
   pod 'MJRefresh'
   pod 'MBProgressHUD'
   # https://github.com/tristanhimmelman/ObjectMapper
   pod 'ObjectMapper'
+  # https://github.com/bmoliveira/Moya-ObjectMapper
+
 end
