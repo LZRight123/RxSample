@@ -211,7 +211,7 @@
 		DFFB95E223220D3500362E42 /* 不是船新版本的第三方_手动适配 */ = {
 			isa = PBXGroup;
 			children = (
-				DFFB95EB23222A7100362E42 /* ObservableType+ObjectMapper.swift */,
+				DFFB95ED23222A7100362E42 /* Response+ObjectMapper.swift */,
 				DFFB95F123222C7700362E42 /* Then.swift */,
 				DFFB95EA23222A7100362E42 /* RxSwift+ObjectMapper */,
 				DFFB95E323220E9200362E42 /* RxMoya */,
@@ -232,7 +232,7 @@
 		DFFB95EA23222A7100362E42 /* RxSwift+ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
-				DFFB95ED23222A7100362E42 /* Response+ObjectMapper.swift */,
+				DFFB95EB23222A7100362E42 /* ObservableType+ObjectMapper.swift */,
 				DFFB95EC23222A7100362E42 /* Single+ObjectMapper.swift */,
 			);
 			path = "RxSwift+ObjectMapper";

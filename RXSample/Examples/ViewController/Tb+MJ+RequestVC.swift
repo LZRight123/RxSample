@@ -12,7 +12,6 @@ import RxSwift
 @_exported import Moya
 @_exported import MJRefresh
 import Kingfisher
-import SDWebImage
 
 public extension Reactive where Base: MJRefreshComponent {
     //正在刷新事件
@@ -63,39 +62,74 @@ public extension Reactive where Base: MJRefreshFooter{
 class Tb_MJ_RequestVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    let btn = UIButton()
+        .then {
+            $0.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
+            $0.setTitle("刷新", for: .normal)
+            $0.setTitleColor(.blue, for: .normal)
+    }
     
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let btn = UIButton()
-            .then {
-                $0.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
-                $0.setTitle("刷新", for: .normal)
-                $0.setTitleColor(.blue, for: .normal)
-        }
+       
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: btn)
-        
-        configMJHeaderRefresh()
-    
-    }
-    
-    
-    let dataSource = BehaviorRelay(value: [SongModel]())
-    func configMJHeaderRefresh() {
         tableView.mj_header = MJRefreshNormalHeader()
         tableView.mj_footer = MJRefreshAutoNormalFooter()
+        tableView.register(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
         
+//        configMJHeaderRefresh_notViewModel()
+        configMJHeaderRefresh_useViewModel()
+        
+        
+    }
+    let dataSource = BehaviorRelay(value: [SongModel]())
+    
+    
+    lazy var vm = FirstVM(input: (headerRefresh: tableView.mj_header.rx.refreshing, otherRefresh: btn.rx.tap, footerRefresh: tableView.mj_footer.rx.refreshing), disposeBag: disposeBag)
+}
+
+//MARK: - viewModel
+extension Tb_MJ_RequestVC {
+    func configMJHeaderRefresh_useViewModel() {
+        vm.dataSource
+            .bind(to: tableView.rx.items(cellIdentifier: "HomeCell", cellType: HomeCell.self)) { (row, model, cell) in
+                cell.iconView.kf.setImage(with: URL(string: model.picture))
+                cell.titleLabel.text = model.title
+                cell.subtitleLabel.text =  model.singers.first?.genre.joined(separator: ",")
+            }
+            .disposed(by: disposeBag)
+        
+        vm.endHeaderRefresh
+            .drive(tableView.mj_header.rx.endRefreshing)
+            .disposed(by: disposeBag)
+        
+        vm.endFooterRefresh
+            .drive(tableView.mj_footer.rx.endFooter)
+            .disposed(by: disposeBag)
+    }
+}
+
+//MARK: - 非viewModel模式
+extension Tb_MJ_RequestVC {
+    func configMJHeaderRefresh_notViewModel() {
+        btn.rx.tap.asDriver()
+            .flatMap{ _ in
+                FristService.getPlayList(0)
+            }
+            .drive(onNext: { [weak self] (arr) in
+                self?.dataSource.accept(arr)
+            })
+            .disposed(by: disposeBag)
         
         let headerRefreshing = tableView.mj_header.rx.refreshing.asDriver()
             .startWith(())
             .flatMapLatest { _ in
-                fmProvider.rx.request(.playlist(index: 0))
-                    .mapArray(SongModel.self, atKeyPath: "song")
-                    .catchErrorJustReturn([])
-                    .asDriver(onErrorJustReturn: [])
+                FristService.getPlayList(0)
             }
+        
         headerRefreshing
             .drive(onNext: { [weak self] (arr) in
                 self?.dataSource.accept(arr)
@@ -108,18 +142,16 @@ class Tb_MJ_RequestVC: UIViewController {
         
         let footerRefreshing = tableView.mj_footer.rx.refreshing.asDriver()
             .flatMapLatest { _ in
-                fmProvider.rx.request(.playlist(index: 0))
-                    .mapArray(SongModel.self, atKeyPath: "song")
-                    .catchErrorJustReturn([])
-                    .asDriver(onErrorJustReturn: [])
+                FristService.getPlayList(0)
             }
+        
         footerRefreshing
             .drive(onNext: { [weak self] (arr) in
                 guard let self = self else { return }
                 self.dataSource.accept(self.dataSource.value + arr)
             })
             .disposed(by: disposeBag)
-       
+        
         
         dataSource.asDriver()
             .map { $0.count == 5 ? EndMJFooter.endWithNoMoreData : EndMJFooter.end }
@@ -128,34 +160,12 @@ class Tb_MJ_RequestVC: UIViewController {
             .disposed(by: disposeBag)
         
         
-        tableView.register(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
         dataSource
             .bind(to: tableView.rx.items(cellIdentifier: "HomeCell", cellType: HomeCell.self)) { (row, model, cell) in
                 cell.iconView.kf.setImage(with: URL(string: model.picture))
                 cell.titleLabel.text = model.title
                 cell.subtitleLabel.text =  model.singers.first?.genre.joined(separator: ",")
             }
-            .disposed(by: disposeBag)        
+            .disposed(by: disposeBag)
     }
 }
-
-//extension Tb_MJ_RequestVC: UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return dataSource.value.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
-//        let model = dataSource.value[indexPath.row]
-//        cell.imageView?.kf.setImage(with: URL(string: model.picture))
-//        cell.textLabel?.text = model.title
-//        cell.detailTextLabel?.text =  model.singers.first?.genre.joined(separator: ",")
-//
-//        return cell
-//
-//    }
-//
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 2
-//    }
-//}
