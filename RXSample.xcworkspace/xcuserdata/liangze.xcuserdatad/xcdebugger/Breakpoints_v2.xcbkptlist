@@ -2,4 +2,22 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RXSample/&#x4e0d;&#x662f;&#x8239;&#x65b0;&#x7248;&#x672c;&#x7684;&#x7b2c;&#x4e09;&#x65b9;_&#x624b;&#x52a8;&#x9002;&#x914d;/RxSwift+ObjectMapper/Response+ObjectMapper.swift"
+            timestampString = "589457166.51485"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "mapObject(_:atKeyPath:context:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -13,4 +13,29 @@ extension Channel {
         channel_id <- map["channel_id"]
     }
 }
+// MARK: SongModel Mappable
+extension SongModel {
+
+    mutating func mapping(map: Map) {
+        albumtitle <- map["albumtitle"]
+        url <- map["url"]
+        file_ext <- map["file_ext"]
+        title <- map["title"]
+        picture <- map["picture"]
+        singers <- map["singers"]
+        artist <- map["artist"]
+        is_royal <- map["is_royal"]
+    }
+}
+// MARK: SongModel.Singer Mappable
+extension SongModel.Singer {
+
+    mutating func mapping(map: Map) {
+        name <- map["name"]
+        name_usual <- map["name_usual"]
+        avatar <- map["avatar"]
+        region <- map["region"]
+        genre <- map["genre"]
+    }
+}
 

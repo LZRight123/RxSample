@@ -22,5 +22,7 @@ target 'RXSample' do
   # https://github.com/tristanhimmelman/ObjectMapper
   pod 'ObjectMapper'
   # https://github.com/bmoliveira/Moya-ObjectMapper
-
+  # https://github.com/onevcat/Kingfisher
+  pod 'Kingfisher'
+  #  pod 'Moya-ObjectMapper/Core'
 end

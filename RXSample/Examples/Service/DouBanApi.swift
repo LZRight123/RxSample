@@ -7,6 +7,9 @@
 //
 
 import Foundation
+import Moya
+
+let fmProvider = MoyaProvider<FMApi>()
 
 extension TargetType {
     var headers: [String : String]? {
@@ -20,7 +23,7 @@ extension TargetType {
 
 enum FMApi: TargetType {
     case channels //https://www.douban.com/j/app/radio/channels
-    case playlist //https://douban.fm/j/mine/playlist
+    case playlist(index: Int) //https://douban.fm/j/mine/playlist?type=n&channel=0&from=mainsite
     
     var baseURL: URL {
         switch self {
@@ -44,9 +47,18 @@ enum FMApi: TargetType {
          return .get
     }
     
-   
     
     var task: Task {
-        return .requestPlain
+        switch self {
+        case .channels:
+            return .requestPlain
+        case .playlist(let index):
+            let parameters: [String: Any] = [
+                "type" : "n",
+                "from" : "mainsite",
+                "channel" : index
+            ]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        }
     }
 }

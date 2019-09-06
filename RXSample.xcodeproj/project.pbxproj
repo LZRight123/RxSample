@@ -21,6 +21,16 @@
 		DFFB95DB2321F10800362E42 /* AutoMappable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95DA2321F10800362E42 /* AutoMappable.generated.swift */; };
 		DFFB95DD2321F1EB00362E42 /* Tb+MJ+RequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95DC2321F1EB00362E42 /* Tb+MJ+RequestVC.swift */; };
 		DFFB95DF2321F23D00362E42 /* Tb+MJ+RequestVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95DE2321F23D00362E42 /* Tb+MJ+RequestVM.swift */; };
+		DFFB95E723220E9200362E42 /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95E423220E9200362E42 /* Observable+Response.swift */; };
+		DFFB95E823220E9200362E42 /* MoyaProvider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95E523220E9200362E42 /* MoyaProvider+Rx.swift */; };
+		DFFB95E923220E9200362E42 /* Single+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95E623220E9200362E42 /* Single+Response.swift */; };
+		DFFB95EE23222A7100362E42 /* ObservableType+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95EB23222A7100362E42 /* ObservableType+ObjectMapper.swift */; };
+		DFFB95EF23222A7100362E42 /* Single+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95EC23222A7100362E42 /* Single+ObjectMapper.swift */; };
+		DFFB95F023222A7100362E42 /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95ED23222A7100362E42 /* Response+ObjectMapper.swift */; };
+		DFFB95F223222C7700362E42 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95F123222C7700362E42 /* Then.swift */; };
+		DFFB95F42322463700362E42 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95F32322463700362E42 /* SongModel.swift */; };
+		DFFB95F72322656000362E42 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95F52322656000362E42 /* HomeCell.swift */; };
+		DFFB95F82322656000362E42 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFFB95F62322656000362E42 /* HomeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +51,16 @@
 		DFFB95DA2321F10800362E42 /* AutoMappable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMappable.generated.swift; sourceTree = "<group>"; };
 		DFFB95DC2321F1EB00362E42 /* Tb+MJ+RequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tb+MJ+RequestVC.swift"; sourceTree = "<group>"; };
 		DFFB95DE2321F23D00362E42 /* Tb+MJ+RequestVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tb+MJ+RequestVM.swift"; sourceTree = "<group>"; };
+		DFFB95E423220E9200362E42 /* Observable+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Response.swift"; sourceTree = "<group>"; };
+		DFFB95E523220E9200362E42 /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
+		DFFB95E623220E9200362E42 /* Single+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Response.swift"; sourceTree = "<group>"; };
+		DFFB95EB23222A7100362E42 /* ObservableType+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+ObjectMapper.swift"; sourceTree = "<group>"; };
+		DFFB95EC23222A7100362E42 /* Single+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+ObjectMapper.swift"; sourceTree = "<group>"; };
+		DFFB95ED23222A7100362E42 /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
+		DFFB95F123222C7700362E42 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		DFFB95F32322463700362E42 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		DFFB95F52322656000362E42 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		DFFB95F62322656000362E42 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		F0C1B9BD5BFCD786B940CFB0 /* Pods-RXSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSample.release.xcconfig"; path = "Target Support Files/Pods-RXSample/Pods-RXSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +117,7 @@
 				DFFB95BA2321E17D00362E42 /* AutoTemplates */,
 				DFFB95A82321D89800362E42 /* AppDelegate.swift */,
 				DFFB95AC2321D89800362E42 /* Main.storyboard */,
+				DFFB95E223220D3500362E42 /* 不是船新版本的第三方_手动适配 */,
 				DFFB95C92321E1C300362E42 /* Examples */,
 				DFFB95AF2321D89900362E42 /* Assets.xcassets */,
 				DFFB95B12321D89900362E42 /* LaunchScreen.storyboard */,
@@ -147,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				DFFB95D52321EC0B00362E42 /* ChannelModel.swift */,
+				DFFB95F32322463700362E42 /* SongModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +176,8 @@
 		DFFB95CB2321E25400362E42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DFFB95F52322656000362E42 /* HomeCell.swift */,
+				DFFB95F62322656000362E42 /* HomeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +206,36 @@
 				DFFB95DC2321F1EB00362E42 /* Tb+MJ+RequestVC.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DFFB95E223220D3500362E42 /* 不是船新版本的第三方_手动适配 */ = {
+			isa = PBXGroup;
+			children = (
+				DFFB95EB23222A7100362E42 /* ObservableType+ObjectMapper.swift */,
+				DFFB95F123222C7700362E42 /* Then.swift */,
+				DFFB95EA23222A7100362E42 /* RxSwift+ObjectMapper */,
+				DFFB95E323220E9200362E42 /* RxMoya */,
+			);
+			path = "不是船新版本的第三方_手动适配";
+			sourceTree = "<group>";
+		};
+		DFFB95E323220E9200362E42 /* RxMoya */ = {
+			isa = PBXGroup;
+			children = (
+				DFFB95E423220E9200362E42 /* Observable+Response.swift */,
+				DFFB95E523220E9200362E42 /* MoyaProvider+Rx.swift */,
+				DFFB95E623220E9200362E42 /* Single+Response.swift */,
+			);
+			path = RxMoya;
+			sourceTree = "<group>";
+		};
+		DFFB95EA23222A7100362E42 /* RxSwift+ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				DFFB95ED23222A7100362E42 /* Response+ObjectMapper.swift */,
+				DFFB95EC23222A7100362E42 /* Single+ObjectMapper.swift */,
+			);
+			path = "RxSwift+ObjectMapper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +303,7 @@
 				DFFB95B32321D89900362E42 /* LaunchScreen.storyboard in Resources */,
 				DFFB95C82321E17D00362E42 /* AutoMappable.stencil in Resources */,
 				DFFB95B02321D89900362E42 /* Assets.xcassets in Resources */,
+				DFFB95F82322656000362E42 /* HomeCell.xib in Resources */,
 				DFFB95AE2321D89800362E42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,13 +374,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFFB95E923220E9200362E42 /* Single+Response.swift in Sources */,
 				DFFB95DF2321F23D00362E42 /* Tb+MJ+RequestVM.swift in Sources */,
+				DFFB95F42322463700362E42 /* SongModel.swift in Sources */,
 				DFFB95D42321E72600362E42 /* DouBanApi.swift in Sources */,
 				DFFB95D62321EC0B00362E42 /* ChannelModel.swift in Sources */,
 				DFFB95DB2321F10800362E42 /* AutoMappable.generated.swift in Sources */,
+				DFFB95E823220E9200362E42 /* MoyaProvider+Rx.swift in Sources */,
+				DFFB95E723220E9200362E42 /* Observable+Response.swift in Sources */,
 				DFFB95A92321D89800362E42 /* AppDelegate.swift in Sources */,
 				DFFB95DD2321F1EB00362E42 /* Tb+MJ+RequestVC.swift in Sources */,
 				DFFB95D22321E70E00362E42 /* OpenSourceService.swift in Sources */,
+				DFFB95EF23222A7100362E42 /* Single+ObjectMapper.swift in Sources */,
+				DFFB95EE23222A7100362E42 /* ObservableType+ObjectMapper.swift in Sources */,
+				DFFB95F72322656000362E42 /* HomeCell.swift in Sources */,
+				DFFB95F023222A7100362E42 /* Response+ObjectMapper.swift in Sources */,
+				DFFB95F223222C7700362E42 /* Then.swift in Sources */,
 				DFFB95C32321E17D00362E42 /* AutogeneratedCodeProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
