@@ -1,0 +1,35 @@
+
+{% for type in types.implementing.AutoMappable|struct %}
+// MARK: {{ type.name }} Mappable
+extension {{type.name}} {
+
+    mutating func mapping(map: Map) {
+    {% for variable in type.storedVariables %}
+        {{variable.name}} <- map["{{variable.name}}"]
+    {% endfor %}
+    }
+}
+{% endfor %}
+
+{% for type in types.implementing.AutoMappable|class %}
+// MARK: {{ type.name }} Mappable
+extension {{type.name}} {
+    
+    func mapping(map: Map) {
+    {% for variable in type.storedVariables %} 
+        {{variable.name}} <- map["{{variable.name}}"]
+    {% endfor %}
+    }
+
+//    var debugDescription: String{
+//       return """
+//        {
+//        {% for variable in type.storedVariables %}
+//            {{variable.name}} : \({{variable.name}}.debugDescription),
+//        {% endfor %}
+//        }
+//        """
+//    }
+    
+}
+{% endfor %}
