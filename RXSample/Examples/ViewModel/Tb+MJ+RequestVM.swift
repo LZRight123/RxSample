@@ -99,7 +99,7 @@ struct FristService {
                 print("上次的请求cancel了 \(index)")
                 cancellableToken.cancel()
             }
-            }.asDriver(onErrorJustReturn: [])
+        }.asDriver(onErrorJustReturn: [])
     }
     
     
