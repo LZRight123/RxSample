@@ -64,7 +64,7 @@ class FirstVM {
             .disposed(by: disposeBag)
         
         input.otherRefresh.asDriver()
-            .flatMapLatest{ _ in
+            .flatMap{ _ in
                 FristService.originGetPlayList(1)
             }
             .drive(onNext: { [weak self] (arr) in
