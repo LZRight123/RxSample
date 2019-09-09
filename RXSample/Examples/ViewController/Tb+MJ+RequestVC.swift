@@ -58,6 +58,9 @@ public extension Reactive where Base: MJRefreshFooter{
 }
 
 
+enum CustomError: Error {
+    case test
+}
 
 class Tb_MJ_RequestVC: UIViewController {
 
@@ -82,14 +85,13 @@ class Tb_MJ_RequestVC: UIViewController {
         
 //        configMJHeaderRefresh_notViewModel()
         configMJHeaderRefresh_useViewModel()
-        
-        
     }
     let dataSource = BehaviorRelay(value: [SongModel]())
     
     
     lazy var vm = FirstVM(input: (headerRefresh: tableView.mj_header.rx.refreshing, otherRefresh: btn.rx.tap, footerRefresh: tableView.mj_footer.rx.refreshing), disposeBag: disposeBag)
 }
+
 
 //MARK: - viewModel
 extension Tb_MJ_RequestVC {

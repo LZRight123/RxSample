@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AE216323E3396125CE17803B /* Pods_RXSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F114517E6A8252A784CC20A /* Pods_RXSample.framework */; };
+		DFC41696232371D6009AD910 /* LearningRXDocments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC41695232371D6009AD910 /* LearningRXDocments.swift */; };
+		DFC416982323A096009AD910 /* DecisionTreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC416972323A096009AD910 /* DecisionTreeVC.swift */; };
+		DFC4169E2323A12F009AD910 /* DecisionTree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC4169C2323A12F009AD910 /* DecisionTree.storyboard */; };
 		DFFB95A92321D89800362E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95A82321D89800362E42 /* AppDelegate.swift */; };
 		DFFB95AE2321D89800362E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFB95AC2321D89800362E42 /* Main.storyboard */; };
 		DFFB95B02321D89900362E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFB95AF2321D89900362E42 /* Assets.xcassets */; };
@@ -36,6 +39,9 @@
 /* Begin PBXFileReference section */
 		05FD42EE1A8257E5583FCE75 /* Pods-RXSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSample.debug.xcconfig"; path = "Target Support Files/Pods-RXSample/Pods-RXSample.debug.xcconfig"; sourceTree = "<group>"; };
 		8F114517E6A8252A784CC20A /* Pods_RXSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC41695232371D6009AD910 /* LearningRXDocments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningRXDocments.swift; sourceTree = "<group>"; };
+		DFC416972323A096009AD910 /* DecisionTreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionTreeVC.swift; sourceTree = "<group>"; };
+		DFC4169D2323A12F009AD910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DecisionTree.storyboard; sourceTree = "<group>"; };
 		DFFB95A52321D89800362E42 /* RXSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFB95A82321D89800362E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFFB95AD2321D89800362E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 				DFFB95BA2321E17D00362E42 /* AutoTemplates */,
 				DFFB95A82321D89800362E42 /* AppDelegate.swift */,
 				DFFB95AC2321D89800362E42 /* Main.storyboard */,
+				DFC4169C2323A12F009AD910 /* DecisionTree.storyboard */,
 				DFFB95E223220D3500362E42 /* 不是船新版本的第三方_手动适配 */,
 				DFFB95C92321E1C300362E42 /* Examples */,
 				DFFB95AF2321D89900362E42 /* Assets.xcassets */,
@@ -204,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				DFFB95DC2321F1EB00362E42 /* Tb+MJ+RequestVC.swift */,
+				DFC41695232371D6009AD910 /* LearningRXDocments.swift */,
+				DFC416972323A096009AD910 /* DecisionTreeVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -305,6 +314,7 @@
 				DFFB95B02321D89900362E42 /* Assets.xcassets in Resources */,
 				DFFB95F82322656000362E42 /* HomeCell.xib in Resources */,
 				DFFB95AE2321D89800362E42 /* Main.storyboard in Resources */,
+				DFC4169E2323A12F009AD910 /* DecisionTree.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,9 +394,11 @@
 				DFFB95E723220E9200362E42 /* Observable+Response.swift in Sources */,
 				DFFB95A92321D89800362E42 /* AppDelegate.swift in Sources */,
 				DFFB95DD2321F1EB00362E42 /* Tb+MJ+RequestVC.swift in Sources */,
+				DFC41696232371D6009AD910 /* LearningRXDocments.swift in Sources */,
 				DFFB95D22321E70E00362E42 /* OpenSourceService.swift in Sources */,
 				DFFB95EF23222A7100362E42 /* Single+ObjectMapper.swift in Sources */,
 				DFFB95EE23222A7100362E42 /* ObservableType+ObjectMapper.swift in Sources */,
+				DFC416982323A096009AD910 /* DecisionTreeVC.swift in Sources */,
 				DFFB95F72322656000362E42 /* HomeCell.swift in Sources */,
 				DFFB95F023222A7100362E42 /* Response+ObjectMapper.swift in Sources */,
 				DFFB95F223222C7700362E42 /* Then.swift in Sources */,
@@ -397,6 +409,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DFC4169C2323A12F009AD910 /* DecisionTree.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFC4169D2323A12F009AD910 /* Base */,
+			);
+			name = DecisionTree.storyboard;
+			sourceTree = "<group>";
+		};
 		DFFB95AC2321D89800362E42 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -540,6 +560,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58Y74FY8QK;
 				INFOPLIST_FILE = RXSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,6 +580,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58Y74FY8QK;
 				INFOPLIST_FILE = RXSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
