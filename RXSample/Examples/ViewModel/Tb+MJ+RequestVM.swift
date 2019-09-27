@@ -77,6 +77,12 @@ class FirstVM {
 
 
 struct FristService {
+    static func getPlayList(_ index: Int) -> Driver<[SongModel]> {
+        return fmProvider.rx.request(.playlist(index: index))
+            .mapArray(SongModel.self, atKeyPath: "song")
+            .asDriver(onErrorJustReturn: [])
+    }
+    
     static func originGetPlayList(_ index: Int)  -> Driver<[SongModel]> {
         let str = "https://douban.fm/j/mine/playlist?type=n&channel=\(index)&from=mainsite"
         
@@ -105,11 +111,7 @@ struct FristService {
     
     
     
-    static func getPlayList(_ index: Int) -> Driver<[SongModel]> {
-        return fmProvider.rx.request(.playlist(index: index))
-            .mapArray(SongModel.self, atKeyPath: "song")
-            .asDriver(onErrorJustReturn: [])
-    }
+    
     
     
 }
