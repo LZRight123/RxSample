@@ -25,6 +25,7 @@ extension SongModel {
         singers <- map["singers"]
         artist <- map["artist"]
         is_royal <- map["is_royal"]
+        intType <- map["intType"]
     }
 }
 // MARK: SongModel.Singer Mappable

@@ -30,4 +30,10 @@ struct SongModel: AutoMappable {
     var singers = [Singer]()
     var artist = "GALA"
     var is_royal = true
+    
+    
+    var intType = 0
 }
+
+
+

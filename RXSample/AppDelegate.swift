@@ -22,14 +22,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let json = """
+    {
+        "albumtitle": "liangze",
+        "url": 30,
+        "file_ext": 2000.11,
+        "picture": "ioser",
+        "singers": 1,
+        "artist": "placeholder",
+        "is_royal": 123,
+        "intType": "123"
+    }
+    """
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let one = UILabel()
-        let two = one
-        print("%x", one)
-        print("%x", &two)
-
+        
+        let model =  SongModel(JSONString: json)
+        print(model!)
+        
+       
         return true
     }
 
