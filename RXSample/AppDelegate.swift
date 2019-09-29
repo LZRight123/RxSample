@@ -24,21 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let json = """
     {
-        "albumtitle": "liangze",
-        "url": 30,
-        "file_ext": 2000.11,
-        "picture": "ioser",
-        "singers": 1,
-        "artist": "placeholder",
-        "is_royal": 123,
-        "intType": "123"
+        "stringType": "liangze",
+        "doubleType": 30,
+        "intType": 2000.11,
+        "boolType": 1,
     }
     """
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let model =  SongModel(JSONString: json)
+        let model =  TestModel(JSONString: json)
         print(model!)
         
        
@@ -48,3 +44,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+struct TestModel: AutoMappable {
+    init?(map: Map) { }
+    
+    var stringType: String?
+    var doubleType: Double?
+    var intType: Int?
+    var boolType: Bool?
+        
+}

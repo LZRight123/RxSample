@@ -39,4 +39,14 @@ extension SongModel.Singer {
         genre <- map["genre"]
     }
 }
+// MARK: TestModel Mappable
+extension TestModel {
+
+    mutating func mapping(map: Map) {
+        stringType <- map["stringType"]
+        doubleType <- map["doubleType"]
+        intType <- map["intType"]
+        boolType <- map["boolType"]
+    }
+}
 
