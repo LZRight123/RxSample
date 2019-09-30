@@ -8,6 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		AE216323E3396125CE17803B /* Pods_RXSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F114517E6A8252A784CC20A /* Pods_RXSample.framework */; };
+		DF8690FA2342202F002E7911 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690DA2342202E002E7911 /* UIColor+Extension.swift */; };
+		DF8690FB2342202F002E7911 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690DB2342202E002E7911 /* Int+Extension.swift */; };
+		DF8690FC2342202F002E7911 /* OptionalExtension .swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690DC2342202E002E7911 /* OptionalExtension .swift */; };
+		DF8690FD2342202F002E7911 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690DD2342202E002E7911 /* UIImage+Extension.swift */; };
+		DF8690FE2342202F002E7911 /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690DE2342202E002E7911 /* UserDefaultsExtensions.swift */; };
+		DF8690FF2342202F002E7911 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690DF2342202E002E7911 /* ArrayExtension.swift */; };
+		DF8691002342202F002E7911 /* QuickUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690E02342202E002E7911 /* QuickUI.swift */; };
+		DF8691012342202F002E7911 /* Notification.Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690E12342202E002E7911 /* Notification.Name+Extension.swift */; };
+		DF8691022342202F002E7911 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690E22342202E002E7911 /* StringExtensions.swift */; };
+		DF8691032342202F002E7911 /* UIMotionEffect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690E32342202E002E7911 /* UIMotionEffect+Extension.swift */; };
+		DF8691042342202F002E7911 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690E42342202E002E7911 /* Double+Extension.swift */; };
+		DF8691052342202F002E7911 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690E52342202E002E7911 /* URL+Extension.swift */; };
+		DF8691062342202F002E7911 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690E62342202E002E7911 /* UIViewExtension.swift */; };
+		DF8691072342202F002E7911 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690E72342202E002E7911 /* UIViewControllerExtensions.swift */; };
+		DF8691082342202F002E7911 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690E82342202E002E7911 /* UIDeviceExtension.swift */; };
+		DF8691092342202F002E7911 /* UIView+IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690E92342202E002E7911 /* UIView+IBDesignable.swift */; };
+		DF86910A2342202F002E7911 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690EA2342202E002E7911 /* UINavigationControllerExtension.swift */; };
+		DF86910B2342202F002E7911 /* GlobalParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690EB2342202E002E7911 /* GlobalParameter.swift */; };
+		DF86910C2342202F002E7911 /* SnapKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690EC2342202E002E7911 /* SnapKitExtensions.swift */; };
+		DF86910D2342202F002E7911 /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690ED2342202E002E7911 /* ErrorExtension.swift */; };
+		DF86910E2342202F002E7911 /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690EE2342202E002E7911 /* NSObjectExtensions.swift */; };
+		DF86910F2342202F002E7911 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690EF2342202E002E7911 /* DateExtension.swift */; };
+		DF8691102342202F002E7911 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690F02342202E002E7911 /* UIFontExtensions.swift */; };
+		DF8691112342202F002E7911 /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690F12342202E002E7911 /* CGFloat+Extension.swift */; };
+		DF8691122342202F002E7911 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690F32342202E002E7911 /* Spring.swift */; };
+		DF8691132342202F002E7911 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690F42342202E002E7911 /* Misc.swift */; };
+		DF8691142342202F002E7911 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690F52342202E002E7911 /* SpringView.swift */; };
+		DF8691152342202F002E7911 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690F62342202E002E7911 /* SpringAnimation.swift */; };
+		DF8691162342202F002E7911 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690F82342202E002E7911 /* Animation.swift */; };
+		DF8691172342202F002E7911 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690F92342202E002E7911 /* Animator.swift */; };
+		DF86912023422076002E7911 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86911823422075002E7911 /* NibLoadable.swift */; };
+		DF86912123422076002E7911 /* LZPopupTransitioningAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86911923422075002E7911 /* LZPopupTransitioningAnimate.swift */; };
+		DF86912223422076002E7911 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86911A23422075002E7911 /* Then.swift */; };
+		DF86912323422076002E7911 /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86911B23422075002E7911 /* URLHandler.swift */; };
+		DF86912423422076002E7911 /* LZTransitioningAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86911C23422076002E7911 /* LZTransitioningAnimate.swift */; };
+		DF86912523422076002E7911 /* LZToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86911D23422076002E7911 /* LZToolBar.swift */; };
+		DF86912623422076002E7911 /* LZPresentationControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86911E23422076002E7911 /* LZPresentationControlller.swift */; };
+		DF86912723422076002E7911 /* LZPresentTransitioningAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86911F23422076002E7911 /* LZPresentTransitioningAnimate.swift */; };
+		DF869129234221B9002E7911 /* QucikUIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF869128234221B9002E7911 /* QucikUIVC.swift */; };
+		DFBE57952342234400975DA0 /* QucikFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBE57942342234400975DA0 /* QucikFirstCell.swift */; };
+		DFBE57972342236A00975DA0 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBE57962342236A00975DA0 /* BaseCell.swift */; };
+		DFBE579A234227D400975DA0 /* LoadSBTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBE5799234227D400975DA0 /* LoadSBTableVC.swift */; };
+		DFBE579C2342289F00975DA0 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBE579B2342289F00975DA0 /* Test.storyboard */; };
+		DFBE579E23422CBF00975DA0 /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBE579D23422CBF00975DA0 /* StoryBoard.swift */; };
+		DFBE57A023422D9000975DA0 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBE579F23422D9000975DA0 /* XibView.swift */; };
+		DFBE57A223422D9B00975DA0 /* XibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE57A123422D9B00975DA0 /* XibView.xib */; };
 		DFC41696232371D6009AD910 /* LearningRXDocments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC41695232371D6009AD910 /* LearningRXDocments.swift */; };
 		DFC416982323A096009AD910 /* DecisionTreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC416972323A096009AD910 /* DecisionTreeVC.swift */; };
 		DFC4169E2323A12F009AD910 /* DecisionTree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC4169C2323A12F009AD910 /* DecisionTree.storyboard */; };
@@ -30,7 +76,6 @@
 		DFFB95EE23222A7100362E42 /* ObservableType+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95EB23222A7100362E42 /* ObservableType+ObjectMapper.swift */; };
 		DFFB95EF23222A7100362E42 /* Single+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95EC23222A7100362E42 /* Single+ObjectMapper.swift */; };
 		DFFB95F023222A7100362E42 /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95ED23222A7100362E42 /* Response+ObjectMapper.swift */; };
-		DFFB95F223222C7700362E42 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95F123222C7700362E42 /* Then.swift */; };
 		DFFB95F42322463700362E42 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95F32322463700362E42 /* SongModel.swift */; };
 		DFFB95F72322656000362E42 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95F52322656000362E42 /* HomeCell.swift */; };
 		DFFB95F82322656000362E42 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFFB95F62322656000362E42 /* HomeCell.xib */; };
@@ -39,6 +84,52 @@
 /* Begin PBXFileReference section */
 		05FD42EE1A8257E5583FCE75 /* Pods-RXSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSample.debug.xcconfig"; path = "Target Support Files/Pods-RXSample/Pods-RXSample.debug.xcconfig"; sourceTree = "<group>"; };
 		8F114517E6A8252A784CC20A /* Pods_RXSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF8690DA2342202E002E7911 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DF8690DB2342202E002E7911 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		DF8690DC2342202E002E7911 /* OptionalExtension .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionalExtension .swift"; sourceTree = "<group>"; };
+		DF8690DD2342202E002E7911 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		DF8690DE2342202E002E7911 /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
+		DF8690DF2342202E002E7911 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		DF8690E02342202E002E7911 /* QuickUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickUI.swift; sourceTree = "<group>"; };
+		DF8690E12342202E002E7911 /* Notification.Name+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Extension.swift"; sourceTree = "<group>"; };
+		DF8690E22342202E002E7911 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		DF8690E32342202E002E7911 /* UIMotionEffect+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIMotionEffect+Extension.swift"; sourceTree = "<group>"; };
+		DF8690E42342202E002E7911 /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		DF8690E52342202E002E7911 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		DF8690E62342202E002E7911 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		DF8690E72342202E002E7911 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		DF8690E82342202E002E7911 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		DF8690E92342202E002E7911 /* UIView+IBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+IBDesignable.swift"; sourceTree = "<group>"; };
+		DF8690EA2342202E002E7911 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		DF8690EB2342202E002E7911 /* GlobalParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalParameter.swift; sourceTree = "<group>"; };
+		DF8690EC2342202E002E7911 /* SnapKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitExtensions.swift; sourceTree = "<group>"; };
+		DF8690ED2342202E002E7911 /* ErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorExtension.swift; sourceTree = "<group>"; };
+		DF8690EE2342202E002E7911 /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
+		DF8690EF2342202E002E7911 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		DF8690F02342202E002E7911 /* UIFontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		DF8690F12342202E002E7911 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		DF8690F32342202E002E7911 /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		DF8690F42342202E002E7911 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		DF8690F52342202E002E7911 /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
+		DF8690F62342202E002E7911 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		DF8690F82342202E002E7911 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		DF8690F92342202E002E7911 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		DF86911823422075002E7911 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		DF86911923422075002E7911 /* LZPopupTransitioningAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZPopupTransitioningAnimate.swift; sourceTree = "<group>"; };
+		DF86911A23422075002E7911 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		DF86911B23422075002E7911 /* URLHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLHandler.swift; sourceTree = "<group>"; };
+		DF86911C23422076002E7911 /* LZTransitioningAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZTransitioningAnimate.swift; sourceTree = "<group>"; };
+		DF86911D23422076002E7911 /* LZToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZToolBar.swift; sourceTree = "<group>"; };
+		DF86911E23422076002E7911 /* LZPresentationControlller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZPresentationControlller.swift; sourceTree = "<group>"; };
+		DF86911F23422076002E7911 /* LZPresentTransitioningAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZPresentTransitioningAnimate.swift; sourceTree = "<group>"; };
+		DF869128234221B9002E7911 /* QucikUIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QucikUIVC.swift; sourceTree = "<group>"; };
+		DFBE57942342234400975DA0 /* QucikFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QucikFirstCell.swift; sourceTree = "<group>"; };
+		DFBE57962342236A00975DA0 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		DFBE5799234227D400975DA0 /* LoadSBTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSBTableVC.swift; sourceTree = "<group>"; };
+		DFBE579B2342289F00975DA0 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		DFBE579D23422CBF00975DA0 /* StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
+		DFBE579F23422D9000975DA0 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		DFBE57A123422D9B00975DA0 /* XibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibView.xib; sourceTree = "<group>"; };
 		DFC41695232371D6009AD910 /* LearningRXDocments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningRXDocments.swift; sourceTree = "<group>"; };
 		DFC416972323A096009AD910 /* DecisionTreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionTreeVC.swift; sourceTree = "<group>"; };
 		DFC4169D2323A12F009AD910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DecisionTree.storyboard; sourceTree = "<group>"; };
@@ -63,7 +154,6 @@
 		DFFB95EB23222A7100362E42 /* ObservableType+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+ObjectMapper.swift"; sourceTree = "<group>"; };
 		DFFB95EC23222A7100362E42 /* Single+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+ObjectMapper.swift"; sourceTree = "<group>"; };
 		DFFB95ED23222A7100362E42 /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
-		DFFB95F123222C7700362E42 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		DFFB95F32322463700362E42 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
 		DFFB95F52322656000362E42 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		DFFB95F62322656000362E42 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
@@ -99,6 +189,84 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DF8690D623421FC5002E7911 /* 效率提升的一些便利方法 */ = {
+			isa = PBXGroup;
+			children = (
+				DF8690EB2342202E002E7911 /* GlobalParameter.swift */,
+				DF86911923422075002E7911 /* LZPopupTransitioningAnimate.swift */,
+				DF86911E23422076002E7911 /* LZPresentationControlller.swift */,
+				DF86911F23422076002E7911 /* LZPresentTransitioningAnimate.swift */,
+				DF86911D23422076002E7911 /* LZToolBar.swift */,
+				DF86911C23422076002E7911 /* LZTransitioningAnimate.swift */,
+				DF86911823422075002E7911 /* NibLoadable.swift */,
+				DF86911A23422075002E7911 /* Then.swift */,
+				DF86911B23422075002E7911 /* URLHandler.swift */,
+				DFBE579D23422CBF00975DA0 /* StoryBoard.swift */,
+				DF8690F72342202E002E7911 /* Animator */,
+				DF8690D92342202E002E7911 /* Categroys */,
+				DF8690F22342202E002E7911 /* Spring */,
+			);
+			path = "效率提升的一些便利方法";
+			sourceTree = "<group>";
+		};
+		DF8690D92342202E002E7911 /* Categroys */ = {
+			isa = PBXGroup;
+			children = (
+				DF8690DA2342202E002E7911 /* UIColor+Extension.swift */,
+				DF8690DB2342202E002E7911 /* Int+Extension.swift */,
+				DF8690DC2342202E002E7911 /* OptionalExtension .swift */,
+				DF8690DD2342202E002E7911 /* UIImage+Extension.swift */,
+				DF8690DE2342202E002E7911 /* UserDefaultsExtensions.swift */,
+				DF8690DF2342202E002E7911 /* ArrayExtension.swift */,
+				DF8690E02342202E002E7911 /* QuickUI.swift */,
+				DF8690E12342202E002E7911 /* Notification.Name+Extension.swift */,
+				DF8690E22342202E002E7911 /* StringExtensions.swift */,
+				DF8690E32342202E002E7911 /* UIMotionEffect+Extension.swift */,
+				DF8690E42342202E002E7911 /* Double+Extension.swift */,
+				DF8690E52342202E002E7911 /* URL+Extension.swift */,
+				DF8690E62342202E002E7911 /* UIViewExtension.swift */,
+				DF8690E72342202E002E7911 /* UIViewControllerExtensions.swift */,
+				DF8690E82342202E002E7911 /* UIDeviceExtension.swift */,
+				DF8690E92342202E002E7911 /* UIView+IBDesignable.swift */,
+				DF8690EA2342202E002E7911 /* UINavigationControllerExtension.swift */,
+				DF8690EC2342202E002E7911 /* SnapKitExtensions.swift */,
+				DF8690ED2342202E002E7911 /* ErrorExtension.swift */,
+				DF8690EE2342202E002E7911 /* NSObjectExtensions.swift */,
+				DF8690EF2342202E002E7911 /* DateExtension.swift */,
+				DF8690F02342202E002E7911 /* UIFontExtensions.swift */,
+				DF8690F12342202E002E7911 /* CGFloat+Extension.swift */,
+			);
+			path = Categroys;
+			sourceTree = "<group>";
+		};
+		DF8690F22342202E002E7911 /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				DF8690F32342202E002E7911 /* Spring.swift */,
+				DF8690F42342202E002E7911 /* Misc.swift */,
+				DF8690F52342202E002E7911 /* SpringView.swift */,
+				DF8690F62342202E002E7911 /* SpringAnimation.swift */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
+		DF8690F72342202E002E7911 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				DF8690F82342202E002E7911 /* Animation.swift */,
+				DF8690F92342202E002E7911 /* Animator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		DFBE5798234227A700975DA0 /* SubModule */ = {
+			isa = PBXGroup;
+			children = (
+				DFBE5799234227D400975DA0 /* LoadSBTableVC.swift */,
+			);
+			path = SubModule;
+			sourceTree = "<group>";
+		};
 		DFFB959C2321D89800362E42 = {
 			isa = PBXGroup;
 			children = (
@@ -120,10 +288,12 @@
 		DFFB95A72321D89800362E42 /* RXSample */ = {
 			isa = PBXGroup;
 			children = (
+				DF8690D623421FC5002E7911 /* 效率提升的一些便利方法 */,
 				DFFB95BA2321E17D00362E42 /* AutoTemplates */,
 				DFFB95A82321D89800362E42 /* AppDelegate.swift */,
 				DFFB95AC2321D89800362E42 /* Main.storyboard */,
 				DFC4169C2323A12F009AD910 /* DecisionTree.storyboard */,
+				DFBE579B2342289F00975DA0 /* Test.storyboard */,
 				DFFB95E223220D3500362E42 /* 不是船新版本的第三方_手动适配 */,
 				DFFB95C92321E1C300362E42 /* Examples */,
 				DFFB95AF2321D89900362E42 /* Assets.xcassets */,
@@ -185,6 +355,10 @@
 			children = (
 				DFFB95F52322656000362E42 /* HomeCell.swift */,
 				DFFB95F62322656000362E42 /* HomeCell.xib */,
+				DFBE57962342236A00975DA0 /* BaseCell.swift */,
+				DFBE57942342234400975DA0 /* QucikFirstCell.swift */,
+				DFBE579F23422D9000975DA0 /* XibView.swift */,
+				DFBE57A123422D9B00975DA0 /* XibView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +387,8 @@
 				DFFB95DC2321F1EB00362E42 /* Tb+MJ+RequestVC.swift */,
 				DFC41695232371D6009AD910 /* LearningRXDocments.swift */,
 				DFC416972323A096009AD910 /* DecisionTreeVC.swift */,
+				DF869128234221B9002E7911 /* QucikUIVC.swift */,
+				DFBE5798234227A700975DA0 /* SubModule */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -221,7 +397,6 @@
 			isa = PBXGroup;
 			children = (
 				DFFB95ED23222A7100362E42 /* Response+ObjectMapper.swift */,
-				DFFB95F123222C7700362E42 /* Then.swift */,
 				DFFB95EA23222A7100362E42 /* RxSwift+ObjectMapper */,
 				DFFB95E323220E9200362E42 /* RxMoya */,
 			);
@@ -309,11 +484,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFFB95D02321E6A500362E42 /* 开源接口.md in Resources */,
+				DFBE57A223422D9B00975DA0 /* XibView.xib in Resources */,
 				DFFB95B32321D89900362E42 /* LaunchScreen.storyboard in Resources */,
 				DFFB95C82321E17D00362E42 /* AutoMappable.stencil in Resources */,
 				DFFB95B02321D89900362E42 /* Assets.xcassets in Resources */,
 				DFFB95F82322656000362E42 /* HomeCell.xib in Resources */,
 				DFFB95AE2321D89800362E42 /* Main.storyboard in Resources */,
+				DFBE579C2342289F00975DA0 /* Test.storyboard in Resources */,
 				DFC4169E2323A12F009AD910 /* DecisionTree.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,25 +561,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF86910B2342202F002E7911 /* GlobalParameter.swift in Sources */,
+				DF8691032342202F002E7911 /* UIMotionEffect+Extension.swift in Sources */,
+				DF8691102342202F002E7911 /* UIFontExtensions.swift in Sources */,
+				DF8691132342202F002E7911 /* Misc.swift in Sources */,
+				DF8691072342202F002E7911 /* UIViewControllerExtensions.swift in Sources */,
+				DF8691172342202F002E7911 /* Animator.swift in Sources */,
+				DF8691142342202F002E7911 /* SpringView.swift in Sources */,
+				DF8690FF2342202F002E7911 /* ArrayExtension.swift in Sources */,
+				DF8691002342202F002E7911 /* QuickUI.swift in Sources */,
 				DFFB95E923220E9200362E42 /* Single+Response.swift in Sources */,
 				DFFB95DF2321F23D00362E42 /* Tb+MJ+RequestVM.swift in Sources */,
+				DF8691162342202F002E7911 /* Animation.swift in Sources */,
+				DFBE57952342234400975DA0 /* QucikFirstCell.swift in Sources */,
+				DF86912723422076002E7911 /* LZPresentTransitioningAnimate.swift in Sources */,
 				DFFB95F42322463700362E42 /* SongModel.swift in Sources */,
+				DF8691062342202F002E7911 /* UIViewExtension.swift in Sources */,
+				DF8690FB2342202F002E7911 /* Int+Extension.swift in Sources */,
+				DF8691012342202F002E7911 /* Notification.Name+Extension.swift in Sources */,
+				DF86910E2342202F002E7911 /* NSObjectExtensions.swift in Sources */,
+				DF8691152342202F002E7911 /* SpringAnimation.swift in Sources */,
+				DF8691042342202F002E7911 /* Double+Extension.swift in Sources */,
+				DF869129234221B9002E7911 /* QucikUIVC.swift in Sources */,
+				DF86910A2342202F002E7911 /* UINavigationControllerExtension.swift in Sources */,
+				DF86912223422076002E7911 /* Then.swift in Sources */,
+				DF86912323422076002E7911 /* URLHandler.swift in Sources */,
 				DFFB95D42321E72600362E42 /* DouBanApi.swift in Sources */,
 				DFFB95D62321EC0B00362E42 /* ChannelModel.swift in Sources */,
 				DFFB95DB2321F10800362E42 /* AutoMappable.generated.swift in Sources */,
+				DF8691122342202F002E7911 /* Spring.swift in Sources */,
+				DF86912123422076002E7911 /* LZPopupTransitioningAnimate.swift in Sources */,
+				DFBE579E23422CBF00975DA0 /* StoryBoard.swift in Sources */,
+				DF86910F2342202F002E7911 /* DateExtension.swift in Sources */,
+				DF86912623422076002E7911 /* LZPresentationControlller.swift in Sources */,
+				DF86910C2342202F002E7911 /* SnapKitExtensions.swift in Sources */,
 				DFFB95E823220E9200362E42 /* MoyaProvider+Rx.swift in Sources */,
 				DFFB95E723220E9200362E42 /* Observable+Response.swift in Sources */,
+				DF8690FD2342202F002E7911 /* UIImage+Extension.swift in Sources */,
+				DF8691092342202F002E7911 /* UIView+IBDesignable.swift in Sources */,
+				DFBE57A023422D9000975DA0 /* XibView.swift in Sources */,
 				DFFB95A92321D89800362E42 /* AppDelegate.swift in Sources */,
 				DFFB95DD2321F1EB00362E42 /* Tb+MJ+RequestVC.swift in Sources */,
 				DFC41696232371D6009AD910 /* LearningRXDocments.swift in Sources */,
 				DFFB95D22321E70E00362E42 /* OpenSourceService.swift in Sources */,
+				DF8691112342202F002E7911 /* CGFloat+Extension.swift in Sources */,
+				DF8690FE2342202F002E7911 /* UserDefaultsExtensions.swift in Sources */,
 				DFFB95EF23222A7100362E42 /* Single+ObjectMapper.swift in Sources */,
 				DFFB95EE23222A7100362E42 /* ObservableType+ObjectMapper.swift in Sources */,
+				DF86910D2342202F002E7911 /* ErrorExtension.swift in Sources */,
 				DFC416982323A096009AD910 /* DecisionTreeVC.swift in Sources */,
 				DFFB95F72322656000362E42 /* HomeCell.swift in Sources */,
 				DFFB95F023222A7100362E42 /* Response+ObjectMapper.swift in Sources */,
-				DFFB95F223222C7700362E42 /* Then.swift in Sources */,
+				DF8691052342202F002E7911 /* URL+Extension.swift in Sources */,
+				DF86912023422076002E7911 /* NibLoadable.swift in Sources */,
+				DFBE57972342236A00975DA0 /* BaseCell.swift in Sources */,
+				DF8691022342202F002E7911 /* StringExtensions.swift in Sources */,
+				DF86912423422076002E7911 /* LZTransitioningAnimate.swift in Sources */,
+				DF86912523422076002E7911 /* LZToolBar.swift in Sources */,
 				DFFB95C32321E17D00362E42 /* AutogeneratedCodeProtocols.swift in Sources */,
+				DFBE579A234227D400975DA0 /* LoadSBTableVC.swift in Sources */,
+				DF8690FC2342202F002E7911 /* OptionalExtension .swift in Sources */,
+				DF8690FA2342202F002E7911 /* UIColor+Extension.swift in Sources */,
+				DF8691082342202F002E7911 /* UIDeviceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

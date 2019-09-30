@@ -90,6 +90,7 @@ class Tb_MJ_RequestVC: UIViewController {
     
     
     lazy var vm = FirstVM(input: (headerRefresh: tableView.mj_header.rx.refreshing, otherRefresh: btn.rx.tap, footerRefresh: tableView.mj_footer.rx.refreshing), disposeBag: disposeBag)
+    
 }
 
 
@@ -103,6 +104,8 @@ extension Tb_MJ_RequestVC {
                 cell.subtitleLabel.text =  model.singers.first?.genre.joined(separator: ",")
             }
             .disposed(by: disposeBag)
+        
+        
         
         vm.endHeaderRefresh
             .drive(tableView.mj_header.rx.endRefreshing)
