@@ -10,7 +10,7 @@ import UIKit
 import ObjectiveC
 //https://nshipster.com/ibinspectable-ibdesignable/
 
-//@IBDesignable
+@IBDesignable
 public extension UIView {
     private struct AssociatedKeys {
         static var shadowMotionOffset: UInt8 = 0
