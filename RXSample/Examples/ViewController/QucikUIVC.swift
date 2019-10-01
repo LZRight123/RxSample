@@ -29,6 +29,22 @@ class QucikUIVC: UIViewController {
         view.addSubviews(tableView)
         tableView.snp.makeConstraints { $0.edges.equalToSuperview() }
         
+        /*
+        _ = UIView.fromNib()
+        tableView.regiseter(QucikFirstCell.self)
+        tableView.regiseter(nib: QucikFirstCell.self)
+        _ = QucikFirstCell.dequeueReusable(for: tableView)
+        let label = UILabel(font: .font7, textColor: .hex050505, numberOfLines: 0)
+        let btn = UIButton(font: .font19, title: "确定", titleColor: .hex222222, image: UIImage(named: ""))
+        _ = UIStackView(arrangedSubviews: [label, btn], spacing: 10, alignment: .leading, distribution: .fill, axis: .vertical)
+        
+        tableView.animate(
+            Animation.fadeIn(),
+            Animation.move(byX: 0, y: 10)
+        )
+        */
+        
+        
         
 //        dataSource
 //            .bind(to: tableView.rx.items) { (tableView, row, element) in
