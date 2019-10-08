@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE216323E3396125CE17803B /* Pods_RXSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F114517E6A8252A784CC20A /* Pods_RXSample.framework */; };
+		DF07FBB2234C90630056B402 /* ToolBarForSBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF07FBB1234C90630056B402 /* ToolBarForSBVC.swift */; };
 		DF8690FA2342202F002E7911 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690DA2342202E002E7911 /* UIColor+Extension.swift */; };
 		DF8690FB2342202F002E7911 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690DB2342202E002E7911 /* Int+Extension.swift */; };
 		DF8690FC2342202F002E7911 /* OptionalExtension .swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690DC2342202E002E7911 /* OptionalExtension .swift */; };
@@ -84,6 +85,7 @@
 /* Begin PBXFileReference section */
 		05FD42EE1A8257E5583FCE75 /* Pods-RXSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSample.debug.xcconfig"; path = "Target Support Files/Pods-RXSample/Pods-RXSample.debug.xcconfig"; sourceTree = "<group>"; };
 		8F114517E6A8252A784CC20A /* Pods_RXSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF07FBB1234C90630056B402 /* ToolBarForSBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarForSBVC.swift; sourceTree = "<group>"; };
 		DF8690DA2342202E002E7911 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		DF8690DB2342202E002E7911 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		DF8690DC2342202E002E7911 /* OptionalExtension .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionalExtension .swift"; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				DFBE5799234227D400975DA0 /* LoadSBTableVC.swift */,
+				DF07FBB1234C90630056B402 /* ToolBarForSBVC.swift */,
 			);
 			path = SubModule;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				DF8690FD2342202F002E7911 /* UIImage+Extension.swift in Sources */,
 				DF8691092342202F002E7911 /* UIView+IBDesignable.swift in Sources */,
 				DFBE57A023422D9000975DA0 /* XibView.swift in Sources */,
+				DF07FBB2234C90630056B402 /* ToolBarForSBVC.swift in Sources */,
 				DFFB95A92321D89800362E42 /* AppDelegate.swift in Sources */,
 				DFFB95DD2321F1EB00362E42 /* Tb+MJ+RequestVC.swift in Sources */,
 				DFC41696232371D6009AD910 /* LearningRXDocments.swift in Sources */,

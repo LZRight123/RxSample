@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,6 +35,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOl-0V-g8u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-19" y="107"/>
+        </scene>
+        <!--Tool Bar ForSBVC-->
+        <scene sceneID="45P-f7-JaV">
+            <objects>
+                <viewController storyboardIdentifier="ToolBarForSBVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nyk-Uo-Z1a" customClass="ToolBarForSBVC" customModule="RXSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bS4-PH-znQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rp-10-5LE" customClass="LZToolBar" customModule="RXSample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="807" width="414" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8r-Uq-Cnn">
+                                        <rect key="frame" x="8" y="8" width="398" height="39"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="m8r-Uq-Cnn" firstAttribute="leading" secondItem="4rp-10-5LE" secondAttribute="leading" constant="8" id="Wue-dw-0Kp"/>
+                                    <constraint firstAttribute="trailing" secondItem="m8r-Uq-Cnn" secondAttribute="trailing" constant="8" id="YZT-iw-Ykl"/>
+                                    <constraint firstItem="m8r-Uq-Cnn" firstAttribute="top" secondItem="4rp-10-5LE" secondAttribute="top" constant="8" id="orb-oR-11Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="m8r-Uq-Cnn" secondAttribute="bottom" constant="8" id="rks-pi-cnM"/>
+                                    <constraint firstAttribute="height" constant="55" id="zD9-RL-enE"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qn4-Bb-2m9">
+                                <rect key="frame" x="215" y="584" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J1k-Nd-XnA" firstAttribute="trailing" secondItem="4rp-10-5LE" secondAttribute="trailing" id="D4r-5F-bDg"/>
+                            <constraint firstItem="J1k-Nd-XnA" firstAttribute="bottom" secondItem="4rp-10-5LE" secondAttribute="bottom" id="hrF-ZJ-qry"/>
+                            <constraint firstItem="4rp-10-5LE" firstAttribute="leading" secondItem="J1k-Nd-XnA" secondAttribute="leading" id="yRv-cw-MvI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J1k-Nd-XnA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgx-vh-Pxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="98"/>
         </scene>
     </scenes>
 </document>

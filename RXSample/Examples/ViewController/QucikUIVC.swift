@@ -19,7 +19,7 @@ class QucikUIVC: UIViewController {
         }
     
     
-    private lazy var dataSource = BehaviorRelay<[Model]>(value: ["加载sb的vc，cell", "从xib加载View", String.randomString(100)])
+    private lazy var dataSource = BehaviorRelay<[Model]>(value: ["加载sb的vc，cell", "从xib加载View", "ToolBarForSBVC", String.randomString(100)])
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,6 +85,9 @@ class QucikUIVC: UIViewController {
             }
             
             nibView.animate(Animation.fadeOut(3))
+        case "ToolBarForSBVC":
+            let nextVC = ToolBarForSBVC.fromSb(.Test)
+            show(nextVC, sender: nil)
         default:
             
             break

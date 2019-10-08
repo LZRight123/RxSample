@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class LZToolBar: SpringView {
+class LZToolBar: UIView {
     private var effectView: UIVisualEffectView = {
         let view = UIVisualEffectView(effect: UIBlurEffect(style: .light))
         view.isHidden = true
