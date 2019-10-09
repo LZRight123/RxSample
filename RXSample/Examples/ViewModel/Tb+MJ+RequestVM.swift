@@ -72,6 +72,14 @@ class FirstVM {
                 self?.page = 1
             })
             .disposed(by: disposeBag)
+        
+        input.otherRefresh.asDriver()
+        .flatMap{ _ in
+            FristService.originGetPlayList(1)
+        }
+        .asObservable().subscribeNext { (arr) in
+            
+        }
     }
 }
 
