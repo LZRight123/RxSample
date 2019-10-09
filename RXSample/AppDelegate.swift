@@ -16,6 +16,20 @@ import UIKit
 @_exported import MJRefresh
 @_exported import ObjectMapper
 
+struct Function {
+    /// 方法交换
+    static func swizzled() {
+        UIViewController.doBadSwizzleStuff()
+        UINavigationController.doBadSwizzleStuff()
+        UIView.doBadSwizzleStuff()
+        UITableViewCell.doBadSwizzleStuff()
+        UICollectionViewCell.doBadSwizzleStuff()
+//        UIControl.doBadSwizzleControl()
+    }
+    
+    private init() { }
+}
+
 /// 方法交换，交换系统已有的方法
 ///
 /// - Parameters:
@@ -67,6 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let model =  TestModel(JSONString: json)
         print(model!)
         
+//        Function.swizzled()
        
         return true
     }
