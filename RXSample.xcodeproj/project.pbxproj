@@ -80,6 +80,9 @@
 		DFFB95F42322463700362E42 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95F32322463700362E42 /* SongModel.swift */; };
 		DFFB95F72322656000362E42 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB95F52322656000362E42 /* HomeCell.swift */; };
 		DFFB95F82322656000362E42 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFFB95F62322656000362E42 /* HomeCell.xib */; };
+		EC144427234D712800DD0D04 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC144426234D712800DD0D04 /* BindableType.swift */; };
+		EC144429234D713100DD0D04 /* UIView+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC144428234D713100DD0D04 /* UIView+Swizzle.swift */; };
+		EC14442B234D713900DD0D04 /* UIViewController+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC14442A234D713900DD0D04 /* UIViewController+Swizzle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +162,9 @@
 		DFFB95F32322463700362E42 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
 		DFFB95F52322656000362E42 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		DFFB95F62322656000362E42 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		EC144426234D712800DD0D04 /* BindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		EC144428234D713100DD0D04 /* UIView+Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Swizzle.swift"; sourceTree = "<group>"; };
+		EC14442A234D713900DD0D04 /* UIViewController+Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Swizzle.swift"; sourceTree = "<group>"; };
 		F0C1B9BD5BFCD786B940CFB0 /* Pods-RXSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSample.release.xcconfig"; path = "Target Support Files/Pods-RXSample/Pods-RXSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -291,6 +297,7 @@
 		DFFB95A72321D89800362E42 /* RXSample */ = {
 			isa = PBXGroup;
 			children = (
+				EC144425234D711700DD0D04 /* Extensions */,
 				DF8690D623421FC5002E7911 /* 效率提升的一些便利方法 */,
 				DFFB95BA2321E17D00362E42 /* AutoTemplates */,
 				DFFB95A82321D89800362E42 /* AppDelegate.swift */,
@@ -423,6 +430,16 @@
 				DFFB95EC23222A7100362E42 /* Single+ObjectMapper.swift */,
 			);
 			path = "RxSwift+ObjectMapper";
+			sourceTree = "<group>";
+		};
+		EC144425234D711700DD0D04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC144426234D712800DD0D04 /* BindableType.swift */,
+				EC144428234D713100DD0D04 /* UIView+Swizzle.swift */,
+				EC14442A234D713900DD0D04 /* UIViewController+Swizzle.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -567,6 +584,7 @@
 				DF86910B2342202F002E7911 /* GlobalParameter.swift in Sources */,
 				DF8691032342202F002E7911 /* UIMotionEffect+Extension.swift in Sources */,
 				DF8691102342202F002E7911 /* UIFontExtensions.swift in Sources */,
+				EC144429234D713100DD0D04 /* UIView+Swizzle.swift in Sources */,
 				DF8691132342202F002E7911 /* Misc.swift in Sources */,
 				DF8691072342202F002E7911 /* UIViewControllerExtensions.swift in Sources */,
 				DF8691172342202F002E7911 /* Animator.swift in Sources */,
@@ -596,9 +614,11 @@
 				DF86912123422076002E7911 /* LZPopupTransitioningAnimate.swift in Sources */,
 				DFBE579E23422CBF00975DA0 /* StoryBoard.swift in Sources */,
 				DF86910F2342202F002E7911 /* DateExtension.swift in Sources */,
+				EC144427234D712800DD0D04 /* BindableType.swift in Sources */,
 				DF86912623422076002E7911 /* LZPresentationControlller.swift in Sources */,
 				DF86910C2342202F002E7911 /* SnapKitExtensions.swift in Sources */,
 				DFFB95E823220E9200362E42 /* MoyaProvider+Rx.swift in Sources */,
+				EC14442B234D713900DD0D04 /* UIViewController+Swizzle.swift in Sources */,
 				DFFB95E723220E9200362E42 /* Observable+Response.swift in Sources */,
 				DF8690FD2342202F002E7911 /* UIImage+Extension.swift in Sources */,
 				DF8691092342202F002E7911 /* UIView+IBDesignable.swift in Sources */,
