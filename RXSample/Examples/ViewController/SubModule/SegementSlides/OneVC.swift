@@ -31,4 +31,6 @@ class OneVC: UITableViewController,SegementSlideContentScrollViewDelegate {
         return cell
     }
     
+
+    
 }

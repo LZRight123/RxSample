@@ -40,5 +40,6 @@ class TwoVC: UIViewController, SegementSlideContentScrollViewDelegate, UITableVi
         cell.textLabel?.text = "\(indexPath.section) -  \(indexPath.row)"
         return cell
     }
+
     
 }

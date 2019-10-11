@@ -95,7 +95,7 @@
 		ECB75C72234D8B4D00D4F68A /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C5E234D8B4C00D4F68A /* Map.swift */; };
 		ECB75C73234D8B4D00D4F68A /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C5F234D8B4C00D4F68A /* Filter.swift */; };
 		ECB75C74234D8B4D00D4F68A /* FromAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C60234D8B4C00D4F68A /* FromAsync.swift */; };
-		ECB75C75234D8B4D00D4F68A /* CatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C61234D8B4C00D4F68A /* CatchError.swift */; };
+		ECB75C75234D8B4D00D4F68A /* tag_CatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C61234D8B4C00D4F68A /* tag_CatchError.swift */; };
 		ECB75C76234D8B4D00D4F68A /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C62234D8B4C00D4F68A /* Curry.swift */; };
 		ECB75C77234D8B4D00D4F68A /* Pausable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C63234D8B4C00D4F68A /* Pausable.swift */; };
 		ECB75C78234D8B4D00D4F68A /* ShareOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C64234D8B4C00D4F68A /* ShareOnce.swift */; };
@@ -110,7 +110,7 @@
 		ECB75C89234D8BFA00D4F68A /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C82234D8BFA00D4F68A /* Filter.swift */; };
 		ECB75C8A234D8BFA00D4F68A /* Bind+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C83234D8BFA00D4F68A /* Bind+Operator.swift */; };
 		ECB75C8B234D8BFA00D4F68A /* ControlProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C84234D8BFA00D4F68A /* ControlProperty.swift */; };
-		ECB75C8C234D8BFA00D4F68A /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C85234D8BFA00D4F68A /* Map.swift */; };
+		ECB75C8C234D8BFA00D4F68A /* tag_Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C85234D8BFA00D4F68A /* tag_Map.swift */; };
 		ECB75C8D234D8BFA00D4F68A /* DisposeBag+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C86234D8BFA00D4F68A /* DisposeBag+Operator.swift */; };
 		ECB75C8E234D8BFA00D4F68A /* <->.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C87234D8BFA00D4F68A /* <->.swift */; };
 		ECB75C8F234D8BFA00D4F68A /* CatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB75C88234D8BFA00D4F68A /* CatchError.swift */; };
@@ -208,7 +208,7 @@
 		ECB75C5E234D8B4C00D4F68A /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		ECB75C5F234D8B4C00D4F68A /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		ECB75C60234D8B4C00D4F68A /* FromAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromAsync.swift; sourceTree = "<group>"; };
-		ECB75C61234D8B4C00D4F68A /* CatchError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchError.swift; sourceTree = "<group>"; };
+		ECB75C61234D8B4C00D4F68A /* tag_CatchError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tag_CatchError.swift; sourceTree = "<group>"; };
 		ECB75C62234D8B4C00D4F68A /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
 		ECB75C63234D8B4C00D4F68A /* Pausable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pausable.swift; sourceTree = "<group>"; };
 		ECB75C64234D8B4C00D4F68A /* ShareOnce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareOnce.swift; sourceTree = "<group>"; };
@@ -223,7 +223,7 @@
 		ECB75C82234D8BFA00D4F68A /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		ECB75C83234D8BFA00D4F68A /* Bind+Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bind+Operator.swift"; sourceTree = "<group>"; };
 		ECB75C84234D8BFA00D4F68A /* ControlProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlProperty.swift; sourceTree = "<group>"; };
-		ECB75C85234D8BFA00D4F68A /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		ECB75C85234D8BFA00D4F68A /* tag_Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tag_Map.swift; sourceTree = "<group>"; };
 		ECB75C86234D8BFA00D4F68A /* DisposeBag+Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DisposeBag+Operator.swift"; sourceTree = "<group>"; };
 		ECB75C87234D8BFA00D4F68A /* <->.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "<->.swift"; sourceTree = "<group>"; };
 		ECB75C88234D8BFA00D4F68A /* CatchError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchError.swift; sourceTree = "<group>"; };
@@ -523,7 +523,7 @@
 			children = (
 				ECB75C5C234D8B4B00D4F68A /* ActivityIndicator.swift */,
 				ECB75C67234D8B4D00D4F68A /* As.swift */,
-				ECB75C61234D8B4C00D4F68A /* CatchError.swift */,
+				ECB75C61234D8B4C00D4F68A /* tag_CatchError.swift */,
 				ECB75C62234D8B4C00D4F68A /* Curry.swift */,
 				ECB75C5D234D8B4B00D4F68A /* Distinct.swift */,
 				ECB75C6B234D8B4D00D4F68A /* Do.swift */,
@@ -554,7 +554,7 @@
 				ECB75C84234D8BFA00D4F68A /* ControlProperty.swift */,
 				ECB75C86234D8BFA00D4F68A /* DisposeBag+Operator.swift */,
 				ECB75C82234D8BFA00D4F68A /* Filter.swift */,
-				ECB75C85234D8BFA00D4F68A /* Map.swift */,
+				ECB75C85234D8BFA00D4F68A /* tag_Map.swift */,
 			);
 			path = RxCocoaExtensions;
 			sourceTree = "<group>";
@@ -764,7 +764,7 @@
 				ECB75C7D234D8B4D00D4F68A /* PausableBuffered.swift in Sources */,
 				DF8691092342202F002E7911 /* UIView+IBDesignable.swift in Sources */,
 				DFBE57A023422D9000975DA0 /* XibView.swift in Sources */,
-				ECB75C75234D8B4D00D4F68A /* CatchError.swift in Sources */,
+				ECB75C75234D8B4D00D4F68A /* tag_CatchError.swift in Sources */,
 				DF07FBB2234C90630056B402 /* ToolBarForSBVC.swift in Sources */,
 				ECB75C70234D8B4D00D4F68A /* ActivityIndicator.swift in Sources */,
 				DFFB95A92321D89800362E42 /* AppDelegate.swift in Sources */,
@@ -774,7 +774,7 @@
 				DF8691112342202F002E7911 /* CGFloat+Extension.swift in Sources */,
 				DF8690FE2342202F002E7911 /* UserDefaultsExtensions.swift in Sources */,
 				DFFB95EF23222A7100362E42 /* Single+ObjectMapper.swift in Sources */,
-				ECB75C8C234D8BFA00D4F68A /* Map.swift in Sources */,
+				ECB75C8C234D8BFA00D4F68A /* tag_Map.swift in Sources */,
 				DFFB95EE23222A7100362E42 /* ObservableType+ObjectMapper.swift in Sources */,
 				DF86910D2342202F002E7911 /* ErrorExtension.swift in Sources */,
 				ECB75C74234D8B4D00D4F68A /* FromAsync.swift in Sources */,
