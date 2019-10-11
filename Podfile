@@ -4,7 +4,8 @@ inhibit_all_warnings!
 target 'RXSample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  
+  pod 'SegementSlide', '2.2.1'
+
 
   # Pods for RXSample
   pod 'RxSwift'
@@ -25,4 +26,5 @@ target 'RXSample' do
   # https://github.com/onevcat/Kingfisher
   pod 'Kingfisher'
   #  pod 'Moya-ObjectMapper/Core'
+
 end

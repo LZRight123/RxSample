@@ -55,6 +55,10 @@
 		DFBE579E23422CBF00975DA0 /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBE579D23422CBF00975DA0 /* StoryBoard.swift */; };
 		DFBE57A023422D9000975DA0 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBE579F23422D9000975DA0 /* XibView.swift */; };
 		DFBE57A223422D9B00975DA0 /* XibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE57A123422D9B00975DA0 /* XibView.xib */; };
+		DFC212FF23504EA7008DD5E8 /* SSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC212FE23504EA7008DD5E8 /* SSVC.swift */; };
+		DFC2130123504F48008DD5E8 /* OneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2130023504F48008DD5E8 /* OneVC.swift */; };
+		DFC213032350502D008DD5E8 /* TwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC213022350502D008DD5E8 /* TwoVC.swift */; };
+		DFC21305235050A7008DD5E8 /* WrapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC21304235050A7008DD5E8 /* WrapVC.swift */; };
 		DFC41696232371D6009AD910 /* LearningRXDocments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC41695232371D6009AD910 /* LearningRXDocments.swift */; };
 		DFC416982323A096009AD910 /* DecisionTreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC416972323A096009AD910 /* DecisionTreeVC.swift */; };
 		DFC4169E2323A12F009AD910 /* DecisionTree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC4169C2323A12F009AD910 /* DecisionTree.storyboard */; };
@@ -132,6 +136,10 @@
 		DFBE579D23422CBF00975DA0 /* StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
 		DFBE579F23422D9000975DA0 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		DFBE57A123422D9B00975DA0 /* XibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibView.xib; sourceTree = "<group>"; };
+		DFC212FE23504EA7008DD5E8 /* SSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSVC.swift; sourceTree = "<group>"; };
+		DFC2130023504F48008DD5E8 /* OneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneVC.swift; sourceTree = "<group>"; };
+		DFC213022350502D008DD5E8 /* TwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoVC.swift; sourceTree = "<group>"; };
+		DFC21304235050A7008DD5E8 /* WrapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapVC.swift; sourceTree = "<group>"; };
 		DFC41695232371D6009AD910 /* LearningRXDocments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningRXDocments.swift; sourceTree = "<group>"; };
 		DFC416972323A096009AD910 /* DecisionTreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionTreeVC.swift; sourceTree = "<group>"; };
 		DFC4169D2323A12F009AD910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DecisionTree.storyboard; sourceTree = "<group>"; };
@@ -266,8 +274,20 @@
 			children = (
 				DFBE5799234227D400975DA0 /* LoadSBTableVC.swift */,
 				DF07FBB1234C90630056B402 /* ToolBarForSBVC.swift */,
+				DFC212FD23504E85008DD5E8 /* SegementSlides */,
 			);
 			path = SubModule;
+			sourceTree = "<group>";
+		};
+		DFC212FD23504E85008DD5E8 /* SegementSlides */ = {
+			isa = PBXGroup;
+			children = (
+				DFC21304235050A7008DD5E8 /* WrapVC.swift */,
+				DFC212FE23504EA7008DD5E8 /* SSVC.swift */,
+				DFC2130023504F48008DD5E8 /* OneVC.swift */,
+				DFC213022350502D008DD5E8 /* TwoVC.swift */,
+			);
+			path = SegementSlides;
 			sourceTree = "<group>";
 		};
 		DFFB959C2321D89800362E42 = {
@@ -589,17 +609,21 @@
 				DF86910A2342202F002E7911 /* UINavigationControllerExtension.swift in Sources */,
 				DF86912223422076002E7911 /* Then.swift in Sources */,
 				DF86912323422076002E7911 /* URLHandler.swift in Sources */,
+				DFC213032350502D008DD5E8 /* TwoVC.swift in Sources */,
 				DFFB95D42321E72600362E42 /* DouBanApi.swift in Sources */,
 				DFFB95D62321EC0B00362E42 /* ChannelModel.swift in Sources */,
 				DFFB95DB2321F10800362E42 /* AutoMappable.generated.swift in Sources */,
 				DF8691122342202F002E7911 /* Spring.swift in Sources */,
 				DF86912123422076002E7911 /* LZPopupTransitioningAnimate.swift in Sources */,
 				DFBE579E23422CBF00975DA0 /* StoryBoard.swift in Sources */,
+				DFC2130123504F48008DD5E8 /* OneVC.swift in Sources */,
 				DF86910F2342202F002E7911 /* DateExtension.swift in Sources */,
+				DFC21305235050A7008DD5E8 /* WrapVC.swift in Sources */,
 				DF86912623422076002E7911 /* LZPresentationControlller.swift in Sources */,
 				DF86910C2342202F002E7911 /* SnapKitExtensions.swift in Sources */,
 				DFFB95E823220E9200362E42 /* MoyaProvider+Rx.swift in Sources */,
 				DFFB95E723220E9200362E42 /* Observable+Response.swift in Sources */,
+				DFC212FF23504EA7008DD5E8 /* SSVC.swift in Sources */,
 				DF8690FD2342202F002E7911 /* UIImage+Extension.swift in Sources */,
 				DF8691092342202F002E7911 /* UIView+IBDesignable.swift in Sources */,
 				DFBE57A023422D9000975DA0 /* XibView.swift in Sources */,

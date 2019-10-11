@@ -85,6 +85,7 @@ class Tb_MJ_RequestVC: UIViewController {
         
 //        configMJHeaderRefresh_notViewModel()
         configMJHeaderRefresh_useViewModel()
+        
     }
     let dataSource = BehaviorRelay(value: [SongModel]())
     
@@ -96,6 +97,7 @@ class Tb_MJ_RequestVC: UIViewController {
 
 //MARK: - viewModel
 extension Tb_MJ_RequestVC {
+    
     func configMJHeaderRefresh_useViewModel() {
         vm.dataSource
             .bind(to: tableView.rx.items(cellIdentifier: "HomeCell", cellType: HomeCell.self)) { (row, model, cell) in
