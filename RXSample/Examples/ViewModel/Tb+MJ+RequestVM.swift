@@ -73,13 +73,13 @@ class FirstVM {
             })
             .disposed(by: disposeBag)
         
-        input.otherRefresh.asDriver()
-        .flatMap{ _ in
-            FristService.originGetPlayList(1)
-        }
-        .asObservable().subscribeNext { (arr) in
-            
-        }
+//        input.otherRefresh.asDriver()
+//        .flatMap{ _ in
+//            FristService.originGetPlayList(1)
+//        }
+//        .asObservable().subscribeNext { (arr) in
+//            
+//        }
     }
 }
 
