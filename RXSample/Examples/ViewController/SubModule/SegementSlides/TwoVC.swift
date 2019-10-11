@@ -19,9 +19,7 @@ class TwoVC: UIViewController, SegementSlideContentScrollViewDelegate, UITableVi
             $0.delegate = self
         }
     
-    override var title: String? {
-        return "第二个"
-    }
+   
 
     
     override func viewDidLoad() {

@@ -15,10 +15,7 @@ class OneVC: UITableViewController,SegementSlideContentScrollViewDelegate {
 
     typealias Model = Int
     var clickRow = PublishRelay<Model>()
-    
-    override var title: String? {
-           return "第一个"
-       }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
