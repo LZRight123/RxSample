@@ -13,7 +13,12 @@ class OneVC: UITableViewController,SegementSlideContentScrollViewDelegate {
         return tableView
     }
 
+    typealias Model = Int
+    var clickRow = PublishRelay<Model>()
     
+    override var title: String? {
+           return "第一个"
+       }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +36,9 @@ class OneVC: UITableViewController,SegementSlideContentScrollViewDelegate {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        clickRow.accept(indexPath.row)
+    }
 
     
 }

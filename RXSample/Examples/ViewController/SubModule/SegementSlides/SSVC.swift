@@ -10,12 +10,16 @@ import UIKit
 @_exported import SegementSlide
 
 class SSVC: SegementSlideViewController {
+    let disposeBag = DisposeBag()
+
+    var vcs: [SegementSlideContentScrollViewDelegate] = [OneVC()];
     
+    lazy var oneVC: SegementSlideContentScrollViewDelegate = OneVC()
+    lazy var twoVC: SegementSlideContentScrollViewDelegate = TwoVC()
     
-    let vcs: [SegementSlideContentScrollViewDelegate] = [OneVC(), TwoVC()];
     
     override var titlesInSwitcher: [String] {
-        return ["1111", "22222"]
+        return vcs.map{ $0.title ?? "设置title" }
     }
     
     override func segementSlideContentViewController(at index: Int) -> SegementSlideContentScrollViewDelegate? {
@@ -27,6 +31,29 @@ class SSVC: SegementSlideViewController {
 
         scrollToSlide(at: 0, animated: true)
         reloadData()
+        
+        
+        bind()
+    }
+    
+    private func bind() {
+        let ov = vcs[0] as! OneVC
+        ov.clickRow
+            .subscribe { [unowned self] _ in
+                self.clickOne()
+            }
+            .disposed(by: disposeBag)
+    }
+    
+    private func clickOne() {
+        if vcs.count == 1 {
+            vcs.append(twoVC)
+            reloadData()
+
+            scrollToSlide(at: 1, animated: true)
+        } else {
+            scrollToSlide(at: 1, animated: true)
+        }
     }
     
 
