@@ -163,6 +163,30 @@
                                             <segue destination="xUK-Ya-EzM" kind="show" id="1dz-IT-kF7"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="7SU-Te-Ha3">
+                                        <rect key="frame" x="0.0" y="204" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7SU-Te-Ha3" id="jId-ak-24S">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Static page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3n7-DJ-3hx">
+                                                    <rect key="frame" x="32" y="13" width="78" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3n7-DJ-3hx" secondAttribute="trailing" constant="20" symbolic="YES" id="BfS-57-aE1"/>
+                                                <constraint firstItem="3n7-DJ-3hx" firstAttribute="leading" secondItem="jId-ak-24S" secondAttribute="leadingMargin" constant="12" id="Rsx-Hx-LEH"/>
+                                                <constraint firstItem="3n7-DJ-3hx" firstAttribute="centerY" secondItem="jId-ak-24S" secondAttribute="centerY" id="ghZ-pL-DbL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dRP-Vp-bEw" kind="show" id="YnW-S1-lAF"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -206,6 +230,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="God-eQ-k2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1629" y="299"/>
+        </scene>
+        <!--StaticV Cs-->
+        <scene sceneID="DJo-AX-ePs">
+            <objects>
+                <viewController id="dRP-Vp-bEw" customClass="StaticVCs" customModule="RXSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LZF-Xn-2BZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Psk-3a-FIM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mwg-ZO-qjG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EsY-dj-36K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="838" y="1570"/>
         </scene>
         <!--QucikUIVC-->
         <scene sceneID="zll-P4-Rhu">

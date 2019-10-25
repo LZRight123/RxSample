@@ -25,6 +25,10 @@ class SSVC: SegementSlideViewController {
     override func segementSlideContentViewController(at index: Int) -> SegementSlideContentScrollViewDelegate? {
         return vcs[index]
     }
+    
+    override var bouncesType: BouncesType {
+        return .child
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

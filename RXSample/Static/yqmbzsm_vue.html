@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./yqmbzsm.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1 class="title">帮助说明</h1>
+        <p class="tip">邀请码可以用于邀请同事注册智药通并加入您的团队，注册后只需供应上管理者审核即可开通智药通账号。 </p>
+
+        <template v-for="item in list">
+            <img :src="item.image" class="bgimg">
+            <div class="bottom-title-wrap">
+                <img :src="item.icon" class="bottom-title-img">
+                <span class="bottom-title">{{item.title}}</span>
+            </div>
+        </template>
+    </div>
+
+    <script src="./vue.js"></script>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                title: "wo de vue",
+                list: [{
+                    id: 1,
+                    image: "img1630@3x.png",
+                    icon: "tab630@3x.png",
+                    title: "业务员注册界面填写邀请码",
+                }, {
+                    id: 2,
+                    image: "img2630@3x.png",
+                    icon: "tab630@3x.png",
+                    title: "管理者审核",
+                }]
+            }
+        })
+    </script>
+
+</body>
+
+</html>
