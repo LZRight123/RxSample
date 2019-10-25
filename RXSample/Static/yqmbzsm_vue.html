@@ -7,13 +7,117 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./common.css">
-    <link rel="stylesheet" href="./yqmbzsm.css">
+    <style>
+        * {
+            /* -webkit-touch-callout: none; */
+            /*系统默认菜单被禁用*/
+            /* -webkit-user-select: none; */
+            /*webkit浏览器*/
+            /* -khtml-user-select: none; */
+        }
+        
+        html,
+        body,
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        
+        body {
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        #app {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            right: 0;
+            overflow-y: auto;
+            bottom: 52px;
+        }
+        
+        #app {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            margin: 25px 0 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #222222;
+        }
+        
+        .tip {
+            margin: 0 auto;
+            max-width: 90%;
+            font-size: 14px;
+            color: #222222;
+        }
+        
+        .bgimg {
+            margin: 20px auto 10px;
+            max-width: 90%;
+        }
+        
+        .bottom-title-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .bottom-title-wrap .bottom-title-img {
+            width: 9px;
+            height: 7.4px;
+        }
+        
+        .bottom-title-wrap .bottom-title {
+            font-size: 13px;
+            color: #666666;
+            padding-left: 5px;
+        }
+        /* footer */
+        
+        .footer-wrap {
+            height: 52px;
+            position: absolute;
+            z-index: 10;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            background-color: white;
+        }
+        
+        .footer-wrap .footer-button {
+            margin: 0 auto;
+            width: 97px;
+            height: 28px;
+            border-radius: 14px;
+            border-color: transparent;
+            background-color: #FF6F21;
+            color: white;
+            font-size: 15px;
+            font-weight: 200;
+            outline: none;
+        }
+    </style>
 </head>
 
 <body>
     <div id="app">
         <h1 class="title">帮助说明</h1>
+        <p class="tip">邀请码可以用于邀请同事注册智药通并加入您的团队，注册后只需供应上管理者审核即可开通智药通账号。 </p>
+
+        <p class="tip">邀请码可以用于邀请同事注册智药通并加入您的团队，注册后只需供应上管理者审核即可开通智药通账号。 </p>
+        <p class="tip">邀请码可以用于邀请同事注册智药通并加入您的团队，注册后只需供应上管理者审核即可开通智药通账号。 </p>
         <p class="tip">邀请码可以用于邀请同事注册智药通并加入您的团队，注册后只需供应上管理者审核即可开通智药通账号。 </p>
 
         <template v-for="item in list">
@@ -22,10 +126,15 @@
                 <img :src="item.icon" class="bottom-title-img">
                 <span class="bottom-title">{{item.title}}</span>
             </div>
-        </template>
+        </template> {{title}}
     </div>
 
-    <script src="./vue.js"></script>
+
+    <div class="footer-wrap">
+        <button class="footer-button" id="footer-button">知道了</button>
+    </div>
+
+    <script src="./vue.min.js"></script>
 
     <script>
         new Vue({
@@ -45,6 +154,14 @@
                 }]
             }
         })
+
+        document.getElementById('footer-button').addEventListener('click', function() {
+            console.log('点按钮了');
+            alert("click me");
+            appChangeColor();
+            WebViewJavascriptBridge.appChangeColor();
+
+        }, true)
     </script>
 
 </body>

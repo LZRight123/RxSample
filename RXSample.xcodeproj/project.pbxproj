@@ -11,12 +11,14 @@
 		DF07FBB2234C90630056B402 /* ToolBarForSBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF07FBB1234C90630056B402 /* ToolBarForSBVC.swift */; };
 		DF54E55023606D84008E7A62 /* StaticVCs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54E54F23606D84008E7A62 /* StaticVCs.swift */; };
 		DF54E57523607168008E7A62 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54E57423607168008E7A62 /* WebVC.swift */; };
-		DF54E57E23607452008E7A62 /* yqmbzsm.html in Resources */ = {isa = PBXBuildFile; fileRef = DF54E57823607452008E7A62 /* yqmbzsm.html */; };
 		DF54E57F23607452008E7A62 /* img2630@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF54E57923607452008E7A62 /* img2630@3x.png */; };
 		DF54E58023607452008E7A62 /* img1630@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF54E57A23607452008E7A62 /* img1630@3x.png */; };
 		DF54E58123607452008E7A62 /* vue.js in Resources */ = {isa = PBXBuildFile; fileRef = DF54E57B23607452008E7A62 /* vue.js */; };
-		DF54E58223607452008E7A62 /* yqmbzsm.css in Resources */ = {isa = PBXBuildFile; fileRef = DF54E57C23607452008E7A62 /* yqmbzsm.css */; };
 		DF54E58323607452008E7A62 /* tab630@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF54E57D23607452008E7A62 /* tab630@3x.png */; };
+		DF681B972362E8F20081E16A /* yqmbzsm.html in Resources */ = {isa = PBXBuildFile; fileRef = DF681B952362E8F10081E16A /* yqmbzsm.html */; };
+		DF681B982362E8F20081E16A /* yqmbzsm_vue.html in Resources */ = {isa = PBXBuildFile; fileRef = DF681B962362E8F20081E16A /* yqmbzsm_vue.html */; };
+		DF681B9A2362EBE10081E16A /* vue.min.js in Resources */ = {isa = PBXBuildFile; fileRef = DF681B992362EBE10081E16A /* vue.min.js */; };
+		DF681B9C2362EFD80081E16A /* WebViewJavascriptBridge_JS.js in Resources */ = {isa = PBXBuildFile; fileRef = DF681B9B2362EFD80081E16A /* WebViewJavascriptBridge_JS.js */; };
 		DF8690FA2342202F002E7911 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690DA2342202E002E7911 /* UIColor+Extension.swift */; };
 		DF8690FB2342202F002E7911 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690DB2342202E002E7911 /* Int+Extension.swift */; };
 		DF8690FC2342202F002E7911 /* OptionalExtension .swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8690DC2342202E002E7911 /* OptionalExtension .swift */; };
@@ -110,12 +112,14 @@
 		DF07FBB1234C90630056B402 /* ToolBarForSBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarForSBVC.swift; sourceTree = "<group>"; };
 		DF54E54F23606D84008E7A62 /* StaticVCs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticVCs.swift; sourceTree = "<group>"; };
 		DF54E57423607168008E7A62 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
-		DF54E57823607452008E7A62 /* yqmbzsm.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yqmbzsm.html; sourceTree = "<group>"; };
 		DF54E57923607452008E7A62 /* img2630@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img2630@3x.png"; sourceTree = "<group>"; };
 		DF54E57A23607452008E7A62 /* img1630@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img1630@3x.png"; sourceTree = "<group>"; };
 		DF54E57B23607452008E7A62 /* vue.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vue.js; sourceTree = "<group>"; };
-		DF54E57C23607452008E7A62 /* yqmbzsm.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = yqmbzsm.css; sourceTree = "<group>"; };
 		DF54E57D23607452008E7A62 /* tab630@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab630@3x.png"; sourceTree = "<group>"; };
+		DF681B952362E8F10081E16A /* yqmbzsm.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yqmbzsm.html; sourceTree = "<group>"; };
+		DF681B962362E8F20081E16A /* yqmbzsm_vue.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yqmbzsm_vue.html; sourceTree = "<group>"; };
+		DF681B992362EBE10081E16A /* vue.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vue.min.js; sourceTree = "<group>"; };
+		DF681B9B2362EFD80081E16A /* WebViewJavascriptBridge_JS.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = WebViewJavascriptBridge_JS.js; sourceTree = "<group>"; };
 		DF8690DA2342202E002E7911 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		DF8690DB2342202E002E7911 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		DF8690DC2342202E002E7911 /* OptionalExtension .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionalExtension .swift"; sourceTree = "<group>"; };
@@ -238,12 +242,14 @@
 		DF54E54C23606CD9008E7A62 /* Static */ = {
 			isa = PBXGroup;
 			children = (
+				DF681B9B2362EFD80081E16A /* WebViewJavascriptBridge_JS.js */,
+				DF681B992362EBE10081E16A /* vue.min.js */,
+				DF681B962362E8F20081E16A /* yqmbzsm_vue.html */,
+				DF681B952362E8F10081E16A /* yqmbzsm.html */,
 				DF54E57A23607452008E7A62 /* img1630@3x.png */,
 				DF54E57923607452008E7A62 /* img2630@3x.png */,
 				DF54E57D23607452008E7A62 /* tab630@3x.png */,
 				DF54E57B23607452008E7A62 /* vue.js */,
-				DF54E57C23607452008E7A62 /* yqmbzsm.css */,
-				DF54E57823607452008E7A62 /* yqmbzsm.html */,
 			);
 			path = Static;
 			sourceTree = "<group>";
@@ -585,16 +591,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF54E58123607452008E7A62 /* vue.js in Resources */,
-				DF54E57E23607452008E7A62 /* yqmbzsm.html in Resources */,
 				DFFB95D02321E6A500362E42 /* 开源接口.md in Resources */,
+				DF681B972362E8F20081E16A /* yqmbzsm.html in Resources */,
+				DF681B9C2362EFD80081E16A /* WebViewJavascriptBridge_JS.js in Resources */,
 				DFBE57A223422D9B00975DA0 /* XibView.xib in Resources */,
 				DF54E58023607452008E7A62 /* img1630@3x.png in Resources */,
+				DF681B982362E8F20081E16A /* yqmbzsm_vue.html in Resources */,
 				DFFB95B32321D89900362E42 /* LaunchScreen.storyboard in Resources */,
+				DF681B9A2362EBE10081E16A /* vue.min.js in Resources */,
 				DF54E58323607452008E7A62 /* tab630@3x.png in Resources */,
 				DFFB95C82321E17D00362E42 /* AutoMappable.stencil in Resources */,
 				DFFB95B02321D89900362E42 /* Assets.xcassets in Resources */,
 				DFFB95F82322656000362E42 /* HomeCell.xib in Resources */,
-				DF54E58223607452008E7A62 /* yqmbzsm.css in Resources */,
 				DF54E57F23607452008E7A62 /* img2630@3x.png in Resources */,
 				DFFB95AE2321D89800362E42 /* Main.storyboard in Resources */,
 				DFBE579C2342289F00975DA0 /* Test.storyboard in Resources */,

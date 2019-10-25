@@ -7,46 +7,92 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./common.css">
-    <link rel="stylesheet" href="./yqmbzsm.css">
+    <style>
+        * {
+            -webkit-touch-callout: none;
+            /*系统默认菜单被禁用*/
+            -webkit-user-select: none;
+            /*webkit浏览器*/
+            -khtml-user-select: none;
+        }
+        
+        html,
+        body,
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        
+        body {
+            overflow: hidden;
+        }
+        
+        #app {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .title {
+            margin: 25px 0 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #222222;
+        }
+        
+        .tip {
+            margin: 0 auto;
+            max-width: 90%;
+            font-size: 14px;
+            color: #222222;
+        }
+        
+        .bgimg {
+            margin: 20px auto 10px;
+            max-width: 90%;
+        }
+        
+        .bottom-title-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .bottom-title-wrap .bottom-title-img {
+            width: 9px;
+            height: 7.4px;
+        }
+        
+        .bottom-title-wrap .bottom-title {
+            font-size: 13px;
+            color: #666666;
+            padding-left: 5px;
+        }
+    </style>
 </head>
 
 <body>
+
     <div id="app">
         <h1 class="title">帮助说明</h1>
         <p class="tip">邀请码可以用于邀请同事注册智药通并加入您的团队，注册后只需供应上管理者审核即可开通智药通账号。 </p>
 
-        <template v-for="item in list">
-            <img :src="item.image" class="bgimg">
-            <div class="bottom-title-wrap">
-                <img :src="item.icon" class="bottom-title-img">
-                <span class="bottom-title">{{item.title}}</span>
-            </div>
-        </template>
+        <img src="img1630@3x.png" class="bgimg">
+
+        <div class="bottom-title-wrap">
+            <img src="tab630@3x.png" class="bottom-title-img">
+            <span class="bottom-title">业务员注册界面填写邀请码</span>
+        </div>
+
+        <img src="img2630@3x.png" class="bgimg">
+
+        <div class="bottom-title-wrap">
+            <img src="tab630@3x.png" class="bottom-title-img">
+            <span class="bottom-title">管理者审核</span>
+        </div>
     </div>
-
-    <script src="./vue.js"></script>
-
-    <script>
-        new Vue({
-            el: "#app",
-            data: {
-                title: "wo de vue",
-                list: [{
-                    id: 1,
-                    image: "img1630@3x.png",
-                    icon: "tab630@3x.png",
-                    title: "业务员注册界面填写邀请码",
-                }, {
-                    id: 2,
-                    image: "img2630@3x.png",
-                    icon: "tab630@3x.png",
-                    title: "管理者审核",
-                }]
-            }
-        })
-    </script>
-
 </body>
 
 </html>
