@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>帮助小梁说明</title>
 
     <style>
         * {
-            /* -webkit-touch-callout: none; */
+            -webkit-touch-callout: none;
             /*系统默认菜单被禁用*/
-            /* -webkit-user-select: none; */
+            -webkit-user-select: none;
             /*webkit浏览器*/
-            /* -khtml-user-select: none; */
+            -khtml-user-select: none;
         }
         
         html,
@@ -22,7 +22,6 @@
         p {
             margin: 0;
             padding: 0;
-            background-color: white;
         }
         
         body {
@@ -43,8 +42,6 @@
         #app {
             display: flex;
             flex-direction: column;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
         }
         
         .title {
@@ -87,7 +84,8 @@
         
         .footer-wrap {
             height: 52px;
-            position: absolute;
+             position: fixed;
+                       
             z-index: 10;
             bottom: 0;
             left: 0;
@@ -96,7 +94,7 @@
             background-color: white;
         }
         
-        .footer-wrap .footer-button {
+        .footer-button {
             margin: 0 auto;
             width: 97px;
             height: 28px;
@@ -116,18 +114,17 @@
         <h1 class="title">帮助说明</h1>
         <p class="tip">邀请码可以用于邀请同事注册智药通并加入您的团队，注册后只需供应上管理者审核即可开通智药通账号。 </p>
 
-        <p class="tip">邀请码可以用于邀请同事注册智药通并加入您的团队，注册后只需供应上管理者审核即可开通智药通账号。 </p>
-        <p class="tip">邀请码可以用于邀请同事注册智药通并加入您的团队，注册后只需供应上管理者审核即可开通智药通账号。 </p>
-        <p class="tip">邀请码可以用于邀请同事注册智药通并加入您的团队，注册后只需供应上管理者审核即可开通智药通账号。 </p>
-
         <template v-for="item in list">
             <img :src="item.image" class="bgimg">
             <div class="bottom-title-wrap">
                 <img :src="item.icon" class="bottom-title-img">
                 <span class="bottom-title">{{item.title}}</span>
             </div>
-        </template> {{title}}
+        </template>
+
+        <div style="height: 10px; background-color: red;"></div>
     </div>
+
 
 
     <div class="footer-wrap">
@@ -155,12 +152,8 @@
             }
         })
 
-        document.getElementById('footer-button').addEventListener('click', function() {
-            console.log('点按钮了');
-            alert("click me");
-            appChangeColor();
-            WebViewJavascriptBridge.appChangeColor();
-
+        document.getElementById('footer-button').addEventListener('touchstart', function() {
+            window.webkit.messageHandlers.closeCurrentVC.postMessage({})
         }, true)
     </script>
 

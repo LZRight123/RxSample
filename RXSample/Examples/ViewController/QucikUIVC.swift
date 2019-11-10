@@ -16,11 +16,26 @@ class QucikUIVC: UIViewController {
     private lazy var tableView = UITableView(style: .plain, backgroundColor: .beijinghui)
         .then{
             $0.regiseter(QucikFirstCell.self) //快捷注册cell方法 莫认 identifier = classname
+            $0.regiseter(UITableViewCell.self)
+        }.then{
+            $0.backgroundView = UIView(color: .random)
+            // cellfor row 取
+            let cell = QucikFirstCell.dequeueReusable(for: $0)
         }
+    
+    
+    let qucikLabel1 = UILabel(font: .font13, textColor: .hex222222)
+    let qucikLabel2 = UILabel(font: .font13, textColor: .hex222222, text: nil)
+    let qucikLabel3 = UILabel(font: .font13, textColor: .hex222222, text: nil, numberOfLines: 0).then{
+        $0.backgroundColor = .random
+    }
+    
     
     
     private lazy var dataSource = BehaviorRelay<[Model]>(value: ["加载sb的vc，cell", "从xib加载View", "ToolBarForSBVC", String.randomString(100)])
     
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

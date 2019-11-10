@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>原生js交互</title>
+
+    <style>
+        html,
+        body,
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .event-test {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .event-test .footer-button {
+            margin: 10px auto;
+            min-width: 100px;
+            height: 28px;
+            border-radius: 14px;
+            border-color: transparent;
+            background-color: #FF6F21;
+            color: white;
+            font-size: 15px;
+            font-weight: 200;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="event-test">
+        <button class="footer-button" id="alert-button">Alert</button>
+        <button class="footer-button" id="confirm-button">Confirm</button>
+        <button class="footer-button" id="changeIDColor-button">changeIDColor</button>
+        <button class="footer-button" id="closeVC-button">关闭控制器</button>
+    </div>
+
+
+
+    <script src="./vue.min.js"></script>
+
+    <script>
+        document.getElementById('closeVC-button').addEventListener('touchstart', function() {
+            window.webkit.messageHandlers.closeCurrentVC.postMessage({})
+        }, true)
+
+        document.getElementById('alert-button').addEventListener('click', function() {
+            console.log('alert');
+            alert("我是一个alert")
+        }, true)
+
+        document.getElementById('confirm-button').addEventListener('click', function() {
+            console.log('confirm');
+            confirm("我是一个confirm")
+        }, true)
+
+
+        function handler(a, b, c) {
+            console.log(typeof(a));
+            console.log(a);
+
+            console.log(typeof(b));
+            console.log(b);
+
+            console.log(typeof(c));
+            console.log(c);
+
+            var text = a.toString() + b.toString() + c.toString()
+            alert(text)
+            return c
+        }
+        document.getElementById('changeIDColor-button').addEventListener('click', function() {
+            console.log('changeIDColor');
+            window.webkit.messageHandlers.changeIDColor.postMessage({
+                "title": "分享",
+                "content": "内容",
+                "url": "链接",
+                "tag": 123,
+                "handlerName": "handler"
+            })
+        }, true)
+    </script>
+
+</body>
+
+</html>

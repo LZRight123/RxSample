@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RxSwift
+//import RxSwift
 
 
 class StaticVCs: UIViewController {
@@ -28,11 +28,16 @@ class StaticVCs: UIViewController {
         let title: String
         let viewname: String
         let type: AnimationType
+        let resourceType: WebVC.ResourceType
+        
     }
     
     lazy var dataSource = BehaviorRelay<[Model]>(value:[
-        Model(title: "邀请码帮助说明_原生", viewname: "yqmbzsm", type: .pop),
-        Model(title: "邀请码帮助说明_Vue", viewname: "yqmbzsm_vue", type: .pop)
+        Model(title: "邀请码帮助说明_原生", viewname: "yqmbzsm", type: .pop, resourceType: .html),
+        Model(title: "邀请码帮助说明_Vue", viewname: "yqmbzsm_vue", type: .pop, resourceType: .html),
+        Model(title: "原生JS交互", viewname: "native_js_action", type: .pop, resourceType: .html),
+        Model(title: "footer", viewname: "21footer", type: .pop, resourceType: .html),
+        Model(title: "blogweb", viewname: "index", type: .pop, resourceType: .html)
     ])
     
     
@@ -64,7 +69,7 @@ class StaticVCs: UIViewController {
     func pushTo(_ model: Model){
         switch model.type {
         case .pop:
-            let nextVC = WebVC.build(model.viewname)
+            let nextVC = WebVC.build(model.viewname, resourceType: model.resourceType)
             present(nextVC, animated: true, completion: nil)
         case .push:
             break

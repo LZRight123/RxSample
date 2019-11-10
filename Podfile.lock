@@ -34,7 +34,7 @@ DEPENDENCIES:
   - WebViewJavascriptBridge
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - Kingfisher
     - MBProgressHUD
@@ -45,9 +45,8 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
-    - SnapKit
-  trunk:
     - SegementSlide
+    - SnapKit
     - WebViewJavascriptBridge
 
 SPEC CHECKSUMS:
@@ -67,4 +66,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 50c1d2002efda1b2003be1cf63348e20a0caf4b8
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4
